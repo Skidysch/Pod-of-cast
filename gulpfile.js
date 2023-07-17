@@ -20,7 +20,6 @@ const revRewrite = require('gulp-rev-rewrite');
 const revDel = require('gulp-rev-delete-original');
 const htmlmin = require('gulp-htmlmin');
 const gulpif = require('gulp-if');
-const notify = require('gulp-notify');
 const image = require('gulp-imagemin');
 const {
   readFileSync
@@ -29,7 +28,6 @@ const typograf = require('gulp-typograf');
 const webp = require('gulp-webp');
 const mainSass = gulpSass(sass);
 const webpackStream = require('webpack-stream');
-const plumber = require('gulp-plumber');
 const path = require('path');
 const zip = require('gulp-zip');
 const rootFolder = path.basename(path.resolve());
@@ -92,12 +90,6 @@ const svgSprites = () => {
 // scss styles
 const styles = () => {
   return src(paths.srcScss, { sourcemaps: !isProd })
-    .pipe(plumber(
-      notify.onError({
-        title: "SCSS",
-        message: "Error: <%= error.message %>"
-      })
-    ))
     .pipe(mainSass())
     .pipe(autoprefixer({
       cascade: false,
@@ -114,12 +106,6 @@ const styles = () => {
 // styles backend
 const stylesBackend = () => {
   return src(paths.srcScss)
-    .pipe(plumber(
-      notify.onError({
-        title: "SCSS",
-        message: "Error: <%= error.message %>"
-      })
-    ))
     .pipe(mainSass())
     .pipe(autoprefixer({
       cascade: false,
@@ -133,12 +119,6 @@ const stylesBackend = () => {
 // scripts
 const scripts = () => {
   return src(paths.srcMainJs)
-    .pipe(plumber(
-      notify.onError({
-        title: "JS",
-        message: "Error: <%= error.message %>"
-      })
-    ))
     .pipe(webpackStream({
       mode: isProd ? 'production' : 'development',
       output: {
@@ -173,12 +153,6 @@ const scripts = () => {
 // scripts backend
 const scriptsBackend = () => {
   return src(paths.srcMainJs)
-    .pipe(plumber(
-      notify.onError({
-        title: "JS",
-        message: "Error: <%= error.message %>"
-      })
-    ))
     .pipe(webpackStream({
       mode: 'development',
       output: {
@@ -301,12 +275,6 @@ const htmlMinify = () => {
 const zipFiles = (done) => {
   del.sync([`${buildFolder}/*.zip`]);
   return src(`${buildFolder}/**/*.*`, {})
-    .pipe(plumber(
-      notify.onError({
-        title: "ZIP",
-        message: "Error: <%= error.message %>"
-      })
-    ))
     .pipe(zip(`${rootFolder}.zip`))
     .pipe(dest(buildFolder));
 }
