@@ -1,0 +1,18 @@
+.nav {
+  &__list {
+    padding-top: 27px;
+    padding-bottom: 21px;
+    gap: 60px;
+  }
+
+  &__link {
+    color: var(--black-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: color .3s ease-in-out;
+
+    @include hover {
+      color: var(--vermillion);
+    }
+  }
+}

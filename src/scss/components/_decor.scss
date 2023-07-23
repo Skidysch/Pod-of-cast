@@ -1,0 +1,279 @@
+.decor {
+  position: absolute;
+
+  &__hero {
+    &--1 {
+      width: 399.604px;
+      height: 437.627px;
+      top: 147.19px;
+      left: -207.36px;
+      transform: rotate(-45deg);
+      fill: transparent;
+      stroke: #000;
+      stroke-width: 8px;
+      stroke-linecap: round;
+    }
+    &--2 {
+      width: 64px;
+      height: 64px;
+      top: 350.61px;
+      left: 262px;
+      fill: var(--vermillion);
+    }
+    &--3 {
+      width: 120px;
+      height: 167px;
+      top: 234px;
+      right: -28px;
+      object-fit: cover;
+    }
+  }
+
+  &--scribble {
+    width: 150px;
+    height: 150px;
+    top: -74px;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    appearance: visible;
+    z-index: 1;
+
+    &--vermillion {
+      stroke: var(--vermillion);
+    }
+  }
+
+  &__features {
+    &--1 {
+      width: 120px;
+      height: 120px;
+      left: -60px;
+      bottom: 49px;
+      fill: transparent;
+      stroke: var(--vermillion);
+      stroke-width: 2.5px;
+    }
+    &--2 {
+      width: 200px;
+      height: 200px;
+      top: -78px;
+      right: -57px;
+    }
+  }
+
+  &__testimonials {
+    &--1 {
+      width: 105px;
+      height: 105px;
+      top: -69px;
+      left: -75px;
+      fill: var(--vermillion)
+    }
+  }
+
+  &__membership {
+    &--1 {
+      width: 240px;
+      height: 240px;
+      top: -146.07px;
+      right: -78px;
+      transform: rotate(14.305deg);
+    }
+  }
+
+  &__recent-episodes {
+    &--1 {
+      width: 240px;
+      height: 240px;
+      top: -170px;
+      right: -140px;
+      fill: var(--vermillion);
+    }
+  }
+
+  &__sponsorship {
+    &--1 {
+      width: 120px;
+      height: 120px;
+      top: -63px;
+      left: -5px;
+      transform: scaleX(-1);
+      fill: var(--vermillion);
+    }
+    &--2 {
+      width: 200px;
+      height: 200px;
+      top: -92px;
+      right: -87px;
+      display: block;
+    }
+    &--3 {
+      width: 120px;
+      height: 120px;
+      bottom: -40px;
+      left: -70px;
+      fill: transparent;
+      stroke: var(--pewter-blue);
+      stroke-width: 2.5px;
+    }
+  }
+
+  &__news {
+    &--1 {
+      width: 185px;
+      height: 184px;
+      top: -70px;
+      left: -87px;
+      transform: rotate(21.967deg);
+    }
+
+    &--2 {
+      width: 240px;
+      height: 240px;
+      bottom: -155px;
+      right: -145px;
+      transform: rotate(135deg);
+    }
+  }
+
+  &__download {
+    &--1 {
+      display: block;
+      width: 449.99px;
+      height: 923.59px;
+      transform: rotate(10deg);
+      top: 309.77px;
+      left: -80.42px;
+    }
+
+    &--2 {
+      width: 522.01px;
+      height: 807.67px;
+      top: 114.51;
+      right: -102.17px;
+      transform: rotate(-15deg);
+    }
+
+    &--3 {
+      width: 120px;
+      height: 120px;
+      top: -70px;
+      right: 405px;
+      fill: var(--vermillion);
+    }
+  }
+
+  &__episode {
+    &-1 {
+      &--mask {
+        &--full {
+          max-width: 158.27px;
+          height: 170.22px;
+          top: 100px;
+          left: 104.88px;
+        }
+
+        &--mini {
+          max-width: 70.436px;
+          height: 75.755px;
+          top: 44.5px;
+          left: 46.68px;
+        }
+      }
+    }
+
+    &-2 {
+      &--mask {
+        &--full {
+          max-width: 323.588px;
+          height: 150.739px;
+          top: 116px;
+          left: 21.2px;
+        }
+
+        &--mini {
+          max-width: 144.01px;
+          height: 67.085px;
+          top: 51.62px;
+          left: 9.43px;
+        }
+      }
+    }
+
+    &-3 {
+      &--mask {
+        &--full {
+          max-width: 177px;
+          height: 305.812px;
+          top: 47.4px;
+          left: 120px;
+        }
+
+        &--mini {
+          max-width: 90.352px;
+          height: 156.105px;
+          top: .19px;
+          left: 49.25px;
+        }
+      }
+    }
+
+    &-4 {
+      &--mask {
+        &--full {
+          max-width: 483.438px;
+          height: 381.552px;
+          top: -129px;
+          left: -129px;
+        }
+
+        &--mini {
+          max-width: 210.144px;
+          height: 169.806px;
+          top: -57.41px;
+          left: -57.41px;
+        }
+      }
+    }
+
+    &-5 {
+      &--mask {
+        &--full {
+          max-width: 283.457px;
+          height: 246.691px;
+          top: 56.33px;
+          left: 48.52px;
+        }
+
+        &--mini {
+          max-width: 126.15px;
+          height: 109.787px;
+          top: 25.07px;
+          left: 21.59px;
+        }
+      }
+    }
+
+    &-6 {
+      &--mask {
+        &--full {
+          max-width: 286.631px;
+          height: 245.328px;
+          top: 11.97px;
+          left: 26px;
+        }
+
+        &--mini {
+          max-width: 127.562px;
+          height: 109.181px;
+          top: 5.327px;
+          left: 11.571px;
+        }
+      }
+    }
+  }
+}

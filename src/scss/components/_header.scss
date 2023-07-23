@@ -1,0 +1,45 @@
+.header {
+  height: 98px;
+  position: fixed;
+  padding-top: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--champagne);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__logo {
+    display: block;
+    height: 74px;
+    width: 74px;
+    margin-right: 123px;
+
+    & path {
+      transition: fill .3s ease-in-out;
+    }
+
+    @include hover {
+      & #logo-path-1, #logo-path-3 {
+        fill: var(--vermillion);
+      }
+
+      & #logo-path-2 {
+        fill: #000;
+      }
+    }
+  }
+
+  &__right {
+    gap: 20px;
+  }
+}
