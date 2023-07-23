@@ -1,0 +1,98 @@
+.footer {
+  padding-bottom: 80px;
+  position: relative;
+
+  &__top {
+    padding-top: 140px;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    padding-top: 20px;
+    border-top: .5px solid var(--davys-grey);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+
+    & .header__logo {
+      margin: 0;
+    }
+  }
+
+  &__description {
+    width: 275px;
+    margin-bottom: 40px;
+  }
+
+  &__menu {
+    width: 270px;
+    flex-wrap: wrap;
+    gap: 20px 90px;
+
+    &-item {
+      width: calc((100% - 90px) / 2);
+    }
+
+    &-link {
+      color: #000;
+      transition: color .3s ease-in-out;
+
+      @include hover {
+        color: var(--vermillion);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    color: var(--davys-grey);
+  }
+
+  &__platforms {
+    &__list {
+      margin-bottom: 60px;
+      justify-content: space-between;
+    }
+
+    &__image {
+      display: block;
+      height: 22px;
+    }
+  }
+
+  &__marketplaces {
+    &__list {
+      gap: 20px;
+    }
+
+    &__image {
+      display: block;
+      height: 36px;
+      width: 36px;
+    }
+  }
+
+  &__copy {
+    & span {
+      color: var(--vermillion);
+    }
+  }
+
+  &__policy {
+    display: flex;
+    gap: 10px;
+  }
+}

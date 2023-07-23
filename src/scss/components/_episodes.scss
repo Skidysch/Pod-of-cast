@@ -1,0 +1,138 @@
+.episodes {
+  &__list {
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__item {
+    width: calc((100% - 20px) / 2);
+    text-align: left;
+    padding: 16px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    @include hover {
+      transform: translate(-10px, -10px);
+      box-shadow: 10px 10px 0 0 var(--pewter-blue);
+    }
+
+    &-main {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-left {
+      min-width: 166px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__image {
+    display: block;
+    min-width: 166px;
+    height: 166px;
+    border-radius: 8px;
+
+    &--big {
+      width: 373px;
+      height: 373px;
+      border-radius: 12px;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: var(--pewter-blue);
+      font-feature-settings: "liga" off;
+      line-height: 1.2;
+      letter-spacing: -2.932px;
+    }
+  }
+
+  &__number {
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: var(--vermillion);
+  }
+
+  &__link {
+    color: #000;
+    transition: color .3s ease-in-out;
+
+    @include hover {
+      color: var(--vermillion)
+    }
+  }
+
+  &__title {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: .5px solid var(--davys-grey);
+    line-height: 1.4;
+    letter-spacing: -0.453px;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 6px;
+
+    &__link {
+      padding: 6px 12px;
+      border: 1px solid var(--davys-grey);
+      border-radius: 4px;
+      transition: color .3s ease-in-out, background .3s ease-in-out;
+
+      @include hover {
+        color: #fff;
+        background-color: var(--pewter-blue);
+      }
+    }
+  }
+
+  &__hosts {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    align-items: center;
+
+    &__list {
+      display: flex;
+    }
+
+    &__avatar {
+      border-left: 3px solid #fff;
+      border-radius: 50%;
+      transform: translateX(6px);
+
+      &:first-of-type {
+        border-left: none;
+      }
+
+      &:last-of-type {
+        transform: translateX(0);
+        z-index: 1;
+      }
+    }
+
+    &__image {
+      display: block;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+    }
+  }
+}

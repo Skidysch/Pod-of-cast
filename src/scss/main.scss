@@ -5,12 +5,19 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/decor";
+@import "./components/social";
+@import "./components/svg";
+@import "./components/btn";
 @import "./components/header";
-
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/testimonials";
+@import "./components/membership";
+@import "./components/recent-episodes";
+@import "./components/episodes";
+@import "./components/sponsorship";
+@import "./components/articles";
+@import "./components/download";
+@import "./components/footer";

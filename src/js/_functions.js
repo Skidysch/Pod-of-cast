@@ -50,11 +50,27 @@ console.log(mobileCheck())
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+Swiper.use([Navigation, Pagination]);
+
+const heroEpisodesSwiper = new Swiper('.hero__episodes__slider', {
+  watchSlidesProgress: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  loop: true,
+});
+
+const testimonialsSwiper = new Swiper('.testimonials__slider', {
+  watchSlidesProgress: true,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
