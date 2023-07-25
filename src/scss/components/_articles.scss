@@ -21,6 +21,11 @@
 
     &-header {
       margin-bottom: 40px;
+      transition: transform .3s ease-in-out;
+
+      @include hover {
+        transform: scale(1.02);
+      }
     }
 
     &-main {

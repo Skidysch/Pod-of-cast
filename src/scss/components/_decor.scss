@@ -25,7 +25,6 @@
       height: 167px;
       top: 234px;
       right: -28px;
-      object-fit: cover;
     }
   }
 
@@ -55,7 +54,7 @@
       bottom: 49px;
       fill: transparent;
       stroke: var(--vermillion);
-      stroke-width: 2.5px;
+      stroke-width: 7.5px;
     }
     &--2 {
       width: 200px;
@@ -70,8 +69,8 @@
       width: 105px;
       height: 105px;
       top: -69px;
-      left: -75px;
-      fill: var(--vermillion)
+      left: 137px;
+      fill: var(--vermillion);
     }
   }
 
@@ -80,7 +79,7 @@
       width: 240px;
       height: 240px;
       top: -146.07px;
-      right: -78px;
+      right: 146.07px;
       transform: rotate(14.305deg);
     }
   }
@@ -100,7 +99,7 @@
       width: 120px;
       height: 120px;
       top: -63px;
-      left: -5px;
+      left: 195px;
       transform: scaleX(-1);
       fill: var(--vermillion);
     }
@@ -118,7 +117,7 @@
       left: -70px;
       fill: transparent;
       stroke: var(--pewter-blue);
-      stroke-width: 2.5px;
+      stroke-width: 7.5px;
     }
   }
 
@@ -162,7 +161,7 @@
       width: 120px;
       height: 120px;
       top: -70px;
-      right: 405px;
+      right: -70px;
       fill: var(--vermillion);
     }
   }

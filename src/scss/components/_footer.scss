@@ -67,6 +67,14 @@
       justify-content: space-between;
     }
 
+    &__item {
+      transition: transform .3s ease-in-out;
+
+      @include hover {
+        transform: scale(.9);
+      }
+    }
+
     &__image {
       display: block;
       height: 22px;
@@ -78,6 +86,14 @@
       gap: 20px;
     }
 
+    &__item {
+      transition: transform .3s ease-in-out;
+
+      @include hover {
+        transform: scale(.9);
+      }
+    }
+    
     &__image {
       display: block;
       height: 36px;

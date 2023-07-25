@@ -136,15 +136,33 @@ section {
 .section {
 
   &__header{
-    width: 735px;
     margin: 0 auto;
     margin-bottom: 100px;
+  }
+
+  &__title {
+    &--small {
+      line-height: 1.4;
+      margin-bottom: 80px;
+    }
   }
 
   &__subtitle {
     margin-top: 20px;
     color: var(--davys-grey);
     font-weight: 500;
+  }
+
+  &__cover {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    &-image {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
@@ -193,4 +211,10 @@ section {
   &__aligned {
     align-items: center;
   }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
 }

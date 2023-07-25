@@ -4,7 +4,6 @@
 
   & .section {
     &__header {
-      width: 555px;
       margin-bottom: 140px;
     }
 
@@ -30,5 +29,11 @@
   &__content {
     margin-top: 24px;
     margin-bottom: 10px;
+  }
+
+  &__button-wrapper {
+    width: 210px;
+    margin: 0 auto;
+    position: relative;
   }
 }

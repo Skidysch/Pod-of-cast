@@ -15,5 +15,36 @@
       top: 10px;
       right: 10px;
     }
+
+    &--follow {
+      gap: 10px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    transition: transform .3s ease-in-out, fill .3s ease-in-out;
+
+    &--footer {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--follow {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--black {
+      fill: #000;
+
+      @include hover {
+        fill: var(--vermillion)
+      }
+    }
+
+    @include hover {
+      transform: scale(1.2);
+    }
   }
 }
