@@ -72,6 +72,17 @@ const testimonialsSwiper = new Swiper('.testimonials__slider', {
   },
 });
 
+const sponsorsSwiper = new Swiper('.sponsors__slider', {
+  watchSlidesProgress: true,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
 // AOS.init();

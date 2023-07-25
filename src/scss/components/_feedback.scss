@@ -1,0 +1,67 @@
+.feedback {
+  & .section__header {
+    position: relative;
+  }
+
+  &__form {
+    grid-column: 3 / 8 span;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 40px 20px;
+    padding-top: 40px;
+    border-top: .5px solid var(--davys-grey);
+
+    & .btn {
+      min-width: 200px;
+      grid-column: 4 / 2 span;
+    }
+
+    &__item {
+      grid-column: 4 span;
+
+      &--wide {
+        grid-column: 8 span;
+      }
+    }
+
+    &__label {
+      margin-bottom: 16px;
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 700;
+
+      & span {
+        color: var(--vermillion);
+      }
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      font-weight: 700;
+      background: #fff;
+      border: 1.5px solid #000;
+      border-radius: 8px;
+      outline: none;
+
+      &::placeholder {
+        color: var(--davys-grey);
+        font-weight: 500;
+      }
+
+      &:focus {
+        border-color: var(--vermillion);
+      }
+    }
+
+    &__input {
+      padding: 19px;
+    }
+
+    &__textarea {
+      margin-bottom: 20px;
+      padding: 20px;
+      resize: none;
+    }
+  }
+}
