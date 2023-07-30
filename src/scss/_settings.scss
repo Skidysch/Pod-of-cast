@@ -141,6 +141,7 @@ section {
   }
 
   &__title {
+    display: inline;
     &--small {
       line-height: 1.4;
       margin-bottom: 80px;

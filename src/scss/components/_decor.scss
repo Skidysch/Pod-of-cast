@@ -99,7 +99,7 @@
       width: 120px;
       height: 120px;
       top: -63px;
-      left: 195px;
+      left: -74px;
       transform: scaleX(-1);
       fill: var(--vermillion);
     }
@@ -181,6 +181,13 @@
           height: 75.755px;
           top: 44.5px;
           left: 46.68px;
+        }
+
+        &--big {
+          max-width: 200.277px;
+          height: 215.4px;
+          top: 126.54px;
+          left: 132.72px;
         }
       }
     }
