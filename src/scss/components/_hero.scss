@@ -12,7 +12,6 @@
   }
 
   &__title {
-    width: 513px;
     margin-bottom: 40px;
     color: #000;
     text-align: center;
@@ -24,12 +23,48 @@
   }
 
   &__subtitle {
-    width: 374px;
     text-align: center;
     margin-bottom: 60px;
     color: var(--davys-grey);
     font-style: normal;
     font-weight: 500;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__stats {
+    &__list {
+      position: absolute;
+      bottom: -119px;
+      z-index: 5;
+      gap: 20px;
+    }
+
+    &__item {
+      width: 373px;
+      padding: 59px 0;
+      text-align: center;
+      border: 1.5px solid #000;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 6px 6px 0 0 var(--vermillion);
+    }
+
+    &__number {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+
+      & span {
+        color: var(--vermillion);
+      }
+    }
+
+    &__object {
+      color: var(--davys-grey);
+    }
   }
 
   &__support {
@@ -58,6 +93,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: transform .3s ease-in-out;
+
+      @include hover {
+        transform: scale(.9);
+      }
     }
   }
 
@@ -71,7 +111,14 @@
     &__item {
       width: 373px;
       height: 373px;
+      border-radius: 12px;
       position: relative;
+      overflow: hidden;
+      transition: transform .3s ease-in-out;
+      
+      @include hover {
+        transform: translateY(10px);
+      }
     }
   }
 }

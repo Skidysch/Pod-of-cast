@@ -1,5 +1,9 @@
 .btn {
   padding: 20px 36px;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   background-color: #000;
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, .25);
   border-radius: 8px;
@@ -17,12 +21,24 @@
     color: #000;
     border: 2px solid #000;
     background-color: #fff;
-    box-shadow: none !important;
+
+    & span {
+      color: var(--vermillion);
+      transition: color .3s ease-in-out;
+    }
 
     @include hover {
       color: #fff;
       background: var(--pewter-blue);
       border-color: var(--pewter-blue);
+
+      & .btn__play {
+        fill: #fff;
+      }
+
+      & span {
+        color: var(--davys-grey);
+      }
     }
   }
 
@@ -33,5 +49,20 @@
 
   &--large {
     padding: 24px 48px;
+  }
+
+  &--no-shadow {
+    box-shadow: none;
+  }
+
+  &__play {
+    display: block;
+    width: 24px;
+    height: 24px;
+    transition: fill .3s ease-in-out;
+  }
+
+  &--centered {
+    margin: 0 auto;
   }
 }

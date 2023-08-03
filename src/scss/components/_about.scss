@@ -1,0 +1,34 @@
+.about {
+  &-podcast {
+    padding-top: 240px;
+
+    &__history {
+      &__list {
+        margin-bottom: 81px;
+        gap: 20px;
+        text-align: left;
+      }
+
+      &__item {
+        width: calc((100% - 20px) / 2);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      &__link {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+
+    &__team {
+      padding-top: 100px;
+      border-top: .5px solid var(--davys-grey);
+
+      &-header {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

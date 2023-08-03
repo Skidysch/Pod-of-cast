@@ -1,0 +1,51 @@
+.sponsors {
+  background-color: var(--champagne);
+
+  & .section__header {
+    position: relative;
+  }
+
+  &__slider {
+    width: 1160px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 108px;
+    position: relative;
+
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      top: auto !important;
+      bottom: 0 !important;
+      width: 48px;
+      height: 48px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    & .swiper-button-next {
+      left: 68px;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    width: 570px;
+    padding: 40px 17px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1.5px solid #000;
+    border-radius: 12px;
+  }
+
+  &__logo {
+    width: 355px;
+    height: 54px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: .5px solid var(--davys-grey);
+  }
+}

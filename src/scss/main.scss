@@ -1,23 +1,30 @@
 // базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+  @import "vars";
+  @import "mixins";
+  @import "fonts";
+  @import "settings";
 
 // подключения компонентов страницы
-@import "./components/decor";
-@import "./components/social";
-@import "./components/svg";
-@import "./components/btn";
-@import "./components/header";
-@import "./components/nav";
-@import "./components/hero";
-@import "./components/features";
-@import "./components/testimonials";
-@import "./components/membership";
-@import "./components/recent-episodes";
-@import "./components/episodes";
-@import "./components/sponsorship";
-@import "./components/articles";
-@import "./components/download";
-@import "./components/footer";
+  @import "./components/decor";
+  @import "./components/social";
+  @import "./components/svg";
+  @import "./components/btn";
+  @import "./components/form";
+  @import "./components/header";
+  @import "./components/nav";
+  @import "./components/hero";
+  @import "./components/features";
+  @import "./components/testimonials";
+  @import "./components/membership";
+  @import "./components/recent-episodes";
+  @import "./components/episode";
+  @import "./components/categories";
+  @import "./components/sponsorship";
+  @import "./components/articles";
+  @import "./components/article";
+  @import "./components/about";
+  @import "./components/hosts";
+  @import "./components/sponsors";
+  @import "./components/download";
+  @import "./components/footer";
+

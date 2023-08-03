@@ -1,4 +1,25 @@
 .articles {
+  &__hero {
+    padding-bottom: 117px;
+
+    & .hero__main,
+    & .hero__subtitle {
+      margin-bottom: 0;
+    }
+  }
+
+  &__browse {
+    padding-top: 178px;
+
+    & .section__header {
+      margin-bottom: 80px;
+    }
+
+    & .articles__list {
+      margin-bottom: 0;
+    }
+  }
+
   &__list {
     margin-bottom: 100px;
     flex-wrap: wrap;
@@ -21,6 +42,11 @@
 
     &-header {
       margin-bottom: 40px;
+      transition: transform .3s ease-in-out;
+
+      @include hover {
+        transform: scale(1.02);
+      }
     }
 
     &-main {
@@ -40,6 +66,9 @@
     display: block;
     width: 100%;
     border-radius: 8px;
+    aspect-ratio: 1.68;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__category {
@@ -56,9 +85,5 @@
     @include hover {
       color: var(--vermillion);
     }
-  }
-
-  &__description {
-
   }
 }

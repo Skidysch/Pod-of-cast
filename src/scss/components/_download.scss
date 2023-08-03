@@ -4,8 +4,9 @@
 
   & .section {
     &__header {
-      width: 555px;
       margin-bottom: 140px;
+      display: flex;
+      flex-direction: column;
     }
 
     &__subtitle {
@@ -18,7 +19,8 @@
   }
 
   &__beta {
-    display: inline-block;
+    max-width: 52px;
+    margin: 0 auto;
     padding: 3px 6px;
     margin-bottom: 20px;
     border: 1px solid var(--vermillion);
@@ -30,5 +32,11 @@
   &__content {
     margin-top: 24px;
     margin-bottom: 10px;
+  }
+
+  &__button-wrapper {
+    width: 210px;
+    margin: 0 auto;
+    position: relative;
   }
 }

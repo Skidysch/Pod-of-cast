@@ -1,0 +1,17 @@
+.categories {
+  &__list {
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    border-bottom: 1.5px solid var(--davys-grey);
+  }
+
+  &__item {
+    padding: 8px 16px;
+  }
+
+  &__link {
+    color: var(--davys-grey);
+    font-size: 22.65px;
+  }
+}
