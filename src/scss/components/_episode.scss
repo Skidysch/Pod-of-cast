@@ -2,6 +2,7 @@
   &-hero {
     padding-top: 198px;
     padding-bottom: 40px;
+    background-color: var(--champagne);
   }
 
   &-browse {
@@ -17,14 +18,6 @@
   &__cover {
     position: relative;
     grid-column: 5 span;
-    transition: transform .3s ease-in-out;
-
-    @include hover {
-      transform: translate(10px, 10px);
-      & .episodes__image--big {
-        box-shadow: none;
-      }
-    }
   }
 
   &__info {
@@ -114,6 +107,7 @@
     margin-bottom: 100px;
     flex-wrap: wrap;
     gap: 20px;
+    position: relative;
   }
 
   &__item {
@@ -169,7 +163,6 @@
       height: 472px;
       border-radius: 8px;
       box-shadow: 12px 12px 0 0 var(--pewter-blue);
-      transition:  box-shadow .3s ease-in-out;
     }
 
     &__title {

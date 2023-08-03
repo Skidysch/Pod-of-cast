@@ -1,5 +1,6 @@
 .btn {
   padding: 20px 36px;
+  width: fit-content;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -59,5 +60,9 @@
     width: 24px;
     height: 24px;
     transition: fill .3s ease-in-out;
+  }
+
+  &--centered {
+    margin: 0 auto;
   }
 }

@@ -24,7 +24,7 @@
     }
 
     &-bottom {
-      min-height: 312px;
+      min-height: 340px;
       padding: 40px 40px 60px;
 
       & p {
@@ -60,6 +60,12 @@
             text-transform: uppercase;
           }
         }
+      }
+    }
+
+    &:not(:first-of-type) {
+      & .sponsorship__item-bottom > .sponsorship__perks > .sponsorship__perks-item:first-child {
+        font-weight: 700;
       }
     }
   }
