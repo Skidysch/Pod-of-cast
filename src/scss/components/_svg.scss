@@ -24,7 +24,25 @@
   stroke-width: 3px;
   transition: stroke .3s ease-in-out;
 
+  &--no-circle {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.5px;
+  }
+
   @include hover {
     stroke: var(--vermillion);
   }
+}
+
+.form__search__icon {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: var(--davys-grey);
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  z-index: 1;
+  transition: transform .3s ease-in-out;
 }
