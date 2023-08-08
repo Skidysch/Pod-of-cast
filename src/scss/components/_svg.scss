@@ -5,29 +5,29 @@
   fill: #fff;
 
   &--full {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   &--mini {
-    width: 12px;
-    height: 12px;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
 
 .arrow-left,
 .arrow-right {
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   fill: transparent;
   stroke: black;
-  stroke-width: 3px;
+  stroke-width: .3rem;
   transition: stroke .3s ease-in-out;
 
   &--no-circle {
-    width: 22px;
-    height: 22px;
-    stroke-width: 1.5px;
+    width: 2.2rem;
+    height: 2.2rem;
+    stroke-width: .15rem;
   }
 
   @include hover {
@@ -36,13 +36,13 @@
 }
 
 .form__search__icon {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   fill: transparent;
   stroke: var(--davys-grey);
   position: absolute;
-  top: 25px;
-  left: 40px;
+  top: 2.5rem;
+  left: 4rem;
   z-index: 1;
   transition: transform .3s ease-in-out;
 }

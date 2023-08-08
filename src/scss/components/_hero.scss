@@ -1,18 +1,18 @@
 .hero {
   width: 100%;
-  padding-top: 98px;
-  padding-bottom: 140px;
+  padding-top: 9.8rem;
+  padding-bottom: 14rem;
   background-color: var(--champagne);
 
   &__main {
-    margin-top: 64px;
-    margin-bottom: 120px;
+    margin-top: 6.4rem;
+    margin-bottom: 12rem;
     flex-direction: column;
     align-items: center;
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     color: #000;
     text-align: center;
     font-weight: 700;
@@ -24,7 +24,7 @@
 
   &__subtitle {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     color: var(--davys-grey);
     font-style: normal;
     font-weight: 500;
@@ -32,29 +32,29 @@
 
   &__buttons {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
   }
 
   &__stats {
     &__list {
       position: absolute;
-      bottom: -119px;
+      bottom: -11.9rem;
       z-index: 5;
-      gap: 20px;
+      gap: 2rem;
     }
 
     &__item {
-      width: 373px;
-      padding: 59px 0;
+      width: 37.3rem;
+      padding: 5.9rem 0;
       text-align: center;
-      border: 1.5px solid #000;
-      border-radius: 8px;
+      border: .15rem solid #000;
+      border-radius: .8rem;
       background-color: #fff;
-      box-shadow: 6px 6px 0 0 var(--vermillion);
+      box-shadow: .6rem .6rem 0 0 var(--vermillion);
     }
 
     &__number {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       text-transform: uppercase;
 
       & span {
@@ -70,26 +70,22 @@
   &__support {
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid var(--davys-grey);
-    border-bottom: 1px solid var(--davys-grey);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: .1rem solid var(--davys-grey);
+    border-bottom: .1rem solid var(--davys-grey);
 
     &-title {
-      color: #000;
-      font-size: 22.65px;
-      font-weight: 700;
-      line-height: 140%;
-      letter-spacing: -0.453px;
+      line-height: 1.4;
     }
 
     &-list {
-      gap: 20px;
+      gap: 2rem;
     }
 
     &-item {
-      width: 275px;
-      height: 84px;
+      width: 27.5rem;
+      height: 8.4rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,26 +95,46 @@
         transform: scale(.9);
       }
     }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__episodes {
     &__slider {
       margin: 0 auto;
-      margin-bottom: 100px;
-      width: 1160px;
+      margin-bottom: 10rem;
+      width: 116rem;
     }
 
     &__item {
-      width: 373px;
-      height: 373px;
-      border-radius: 12px;
+      width: 37.3rem;
+      height: 37.3rem;
+      border-radius: 1.2rem;
       position: relative;
       overflow: hidden;
       transition: transform .3s ease-in-out;
-      
+
       @include hover {
-        transform: translateY(10px);
+        transform: translateY(1rem);
       }
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
 }

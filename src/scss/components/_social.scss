@@ -1,30 +1,30 @@
 .social {
   &__list {
-    gap: 25px;
+    gap: 2.5rem;
 
     &--full-episode {
-      gap: 10px;
+      gap: 1rem;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 2rem;
+      right: 2rem;
     }
 
     &--mini-episode {
-      gap: 6px;
+      gap: .6rem;
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 1rem;
+      right: 1rem;
     }
 
     &--big-episode {
-      gap: 12.65px;
+      gap: 1.265rem;
       position: absolute;
-      top: 25.31px;
-      right: 25.31px;
+      top: 2.531rem;
+      right: 2.531rem;
     }
 
     &--follow {
-      gap: 10px;
+      gap: 1rem;
     }
   }
 
@@ -33,13 +33,13 @@
     transition: transform .3s ease-in-out, fill .3s ease-in-out;
 
     &--footer {
-      width: 24px;
-      height: 24px;
+      width: 2.4rem;
+      height: 2.4rem;
     }
 
     &--follow {
-      width: 20px;
-      height: 20px;
+      width: 2rem;
+      height: 2rem;
     }
 
     &--black {

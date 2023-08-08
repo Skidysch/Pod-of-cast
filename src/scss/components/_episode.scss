@@ -1,7 +1,7 @@
 .episode {
   &-hero {
-    padding-top: 198px;
-    padding-bottom: 40px;
+    padding-top: 19.8rem;
+    padding-bottom: 4rem;
     background-color: var(--champagne);
   }
 
@@ -12,7 +12,7 @@
   }
 
   &__body {
-    margin-bottom: 80px;
+    margin-bottom: 8rem;
   }
 
   &__cover {
@@ -25,7 +25,7 @@
   }
 
   &__intro {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     display: flex;
     justify-content: space-between;
     color: var(--vermillion);
@@ -33,20 +33,20 @@
   }
 
   &__title {
-    padding-bottom: 23px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #000;
+    padding-bottom: 2.3rem;
+    margin-bottom: 2rem;
+    border-bottom: .1rem solid #000;
     text-align: left;
   }
 
   &__description {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     color: var(--davys-grey);
     text-align: left;
   }
 
   &__details {
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,11 +55,11 @@
   &__hosted {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 
     &-avatar {
-      width: 36px;
-      height: 36px;
+      width: 3.6rem;
+      height: 3.6rem;
       overflow: hidden;
       border-radius: 50%;
 
@@ -80,20 +80,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px 6px;
-    border: 1px solid var(--vermillion);
-    border-radius: 4px;
-    font-size: 12px;
+    padding: .3rem .6rem;
+    border: .1rem solid var(--vermillion);
+    border-radius: .4rem;
+    font-size: 1.2rem;
   }
 
   &__buttons {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
   }
 
   &__tags {
     display: flex;
-    gap: 60px;
+    gap: 6rem;
     align-items: center;
 
     &-text {
@@ -104,37 +104,37 @@
 
 .episodes {
   &__list {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
     position: relative;
   }
 
   &__item {
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 2rem) / 2);
     text-align: left;
-    padding: 16px;
-    border: 2px solid #000;
-    border-radius: 12px;
+    padding: 1.6rem;
+    border: .2rem solid #000;
+    border-radius: 1.2rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
     transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
     @include hover {
-      transform: translate(-10px, -10px);
-      box-shadow: 10px 10px 0 0 var(--pewter-blue);
+      transform: translate(-1rem, -1rem);
+      box-shadow: 1rem 1rem 0 0 var(--pewter-blue);
     }
 
     &-main {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 2rem;
     }
 
     &-left {
-      min-width: 166px;
+      min-width: 16.6rem;
       position: relative;
       overflow: hidden;
     }
@@ -148,45 +148,46 @@
 
   &__image {
     display: block;
-    min-width: 166px;
-    height: 166px;
-    border-radius: 8px;
+    min-width: 16.6rem;
+    aspect-ratio: 1 / 1;
+    height: 16.6rem;
+    border-radius: .8rem;
 
     &--full {
-      width: 373px;
-      height: 373px;
-      border-radius: 12px;
+      width: 37.3rem;
+      height: 37.3rem;
+      border-radius: 1.2rem;
     }
 
     &--big {
-      width: 472px;
-      height: 472px;
-      border-radius: 8px;
-      box-shadow: 12px 12px 0 0 var(--pewter-blue);
+      width: 47.2rem;
+      height: 47.2rem;
+      border-radius: .8rem;
+      box-shadow: 1.2rem 1.2rem 0 0 var(--pewter-blue);
     }
 
     &__title {
       position: absolute;
-      bottom: 20px;
-      left: 20px;
+      bottom: 2rem;
+      left: 2rem;
       color: var(--pewter-blue);
       font-feature-settings: "liga" off;
       line-height: 1.2;
-      letter-spacing: -2.932px;
+      letter-spacing: -.2932rem;
 
       &--big {
-        bottom: 25.31px;
-        left: 25.31px;
-        font-size: 46.377px;
+        bottom: 2.531rem;
+        left: 2.531rem;
+        font-size: 4.6377rem;
         font-style: normal;
         line-height: 1.4;
-        letter-spacing: -3.71px;
+        letter-spacing: -.371rem;
       }
     }
   }
 
   &__number {
-    margin-bottom: 4px;
+    margin-bottom: .4rem;
     font-weight: 700;
     color: var(--vermillion);
   }
@@ -201,21 +202,21 @@
   }
 
   &__title {
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-    border-bottom: .5px solid var(--davys-grey);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: .05rem solid var(--davys-grey);
     line-height: 1.4;
-    letter-spacing: -0.453px;
+    letter-spacing: -.0453rem;
   }
 
   &__tags {
     display: flex;
-    gap: 6px;
+    gap: .6rem;
 
     &__link {
-      padding: 6px 12px;
-      border: 1px solid var(--davys-grey);
-      border-radius: 4px;
+      padding: .6rem 1.2rem;
+      border: .1rem solid var(--davys-grey);
+      border-radius: .4rem;
       transition: color .3s ease-in-out, background .3s ease-in-out;
 
       @include hover {
@@ -227,7 +228,7 @@
 
   &__hosts {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     font-weight: 700;
     align-items: center;
 
@@ -236,9 +237,9 @@
     }
 
     &__avatar {
-      border-left: 3px solid #fff;
+      border-left: .3rem solid #fff;
       border-radius: 50%;
-      transform: translateX(6px);
+      transform: translateX(.6rem);
 
       &:first-of-type {
         border-left: none;
@@ -252,8 +253,8 @@
 
     &__image {
       display: block;
-      width: 26px;
-      height: 26px;
+      width: 2.6rem;
+      height: 2.6rem;
       border-radius: 50%;
     }
   }

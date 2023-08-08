@@ -1,7 +1,7 @@
 .article {
   &__hero {
-    padding-top: 178px;
-    padding-bottom: 46px;
+    padding-top: 17.8rem;
+    padding-bottom: 4.6rem;
 
     & .container {
       flex-direction: column;
@@ -9,7 +9,7 @@
   }
 
   &__tools {
-    margin-bottom: 47px;
+    margin-bottom: 4.7rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -18,9 +18,9 @@
   &__return {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     color: var(--davys-grey);
-    font-size: 14px;
+    font-size: 1.4rem;
     transition: color .3s ease-in-out;
 
     @include hover {
@@ -33,33 +33,33 @@
 
   &__date {
     color: var(--davys-grey);
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   &__category {
     color: var(--vermillion);
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
 
   &__tags {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
 
   &__content {
     &__container {
       display: flex;
       flex-direction: column;
-      gap: 100px;
+      gap: 10rem;
     }
   }
 
   &__cover {
-    margin: -140px;
+    margin: -14rem;
     margin-bottom: 0;
 
     &-image {
@@ -69,8 +69,8 @@
   }
 
   &__plain-text {
-    padding-bottom: 80px;
-    border-bottom: .5px solid var(--davys-grey);
+    padding-bottom: 8rem;
+    border-bottom: .05rem solid var(--davys-grey);
     & .article__list {
       text-align: left;
     }
@@ -78,11 +78,11 @@
 
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 
     &-examples {
       &__title {
-        margin-bottom: 60px;
+        margin-bottom: 6rem;
         color: #000;
       }
     }
@@ -90,16 +90,16 @@
     &--bullet,
     &--number {
       flex-direction: column;
-      gap: 40px;
+      gap: 4rem;
       text-align: left;
       margin: 0;
       padding: 0;
-      padding-left: 20px;
+      padding-left: 2rem;
     }
   }
 
   &__item {
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 2rem) / 2);
     color: var(--davys-grey);
 
     & b {
@@ -118,7 +118,7 @@
 
     &--bullet,
     &--number {
-      padding-left: 20px;
+      padding-left: 2rem;
       &::marker {
         color: var(--vermillion);
         font-family: inherit;
@@ -131,11 +131,11 @@
     &-item {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 2rem;
     }
 
     &-link {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 

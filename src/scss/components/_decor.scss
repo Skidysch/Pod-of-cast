@@ -3,40 +3,40 @@
 
   &__hero {
     &--1 {
-      width: 399.604px;
-      height: 437.627px;
-      top: 147.19px;
-      left: -207.36px;
+      width: 39.9604rem;
+      height: 43.7627rem;
+      top: 14.719rem;
+      left: -20.736rem;
       transform: rotate(-45deg);
       fill: transparent;
       stroke: #000;
-      stroke-width: 8px;
+      stroke-width: .8rem;
       stroke-linecap: round;
     }
     &--2 {
-      width: 64px;
-      height: 64px;
-      top: 350.61px;
-      left: 262px;
+      width: 6.4rem;
+      height: 6.4rem;
+      top: 35.061rem;
+      left: 26.2rem;
       fill: var(--vermillion);
     }
     &--3 {
-      width: 120px;
-      height: 167px;
-      top: 234px;
-      right: -28px;
+      width: 12rem;
+      height: 16.7rem;
+      top: 23.4rem;
+      right: -2.8rem;
     }
   }
 
   &--scribble {
-    width: 150px;
-    height: 150px;
-    top: -74px;
+    width: 15rem;
+    height: 15rem;
+    top: -7.4rem;
     left: 50%;
     transform: translateX(-50%);
     fill: transparent;
     stroke: #000;
-    stroke-width: 1.5px;
+    stroke-width: .15rem;
     stroke-linecap: round;
     appearance: visible;
     z-index: 1;
@@ -48,93 +48,93 @@
 
   &__features {
     &--1 {
-      width: 120px;
-      height: 120px;
-      left: -60px;
-      bottom: 49px;
+      width: 12rem;
+      height: 12rem;
+      left: -6rem;
+      bottom: 4.9rem;
       fill: transparent;
       stroke: var(--vermillion);
-      stroke-width: 7.5px;
+      stroke-width: .75rem;
     }
     &--2 {
-      width: 200px;
-      height: 200px;
-      top: -78px;
-      right: -57px;
+      width: 20rem;
+      height: 20rem;
+      top: -7.8rem;
+      right: -5.7rem;
     }
   }
 
   &__testimonials {
     &--1 {
-      width: 105px;
-      height: 105px;
-      top: -69px;
-      left: -99px;
+      width: 10.5rem;
+      height: 10.5rem;
+      top: -6.9rem;
+      left: -9.9rem;
       fill: var(--vermillion);
     }
   }
 
   &__membership {
     &--1 {
-      width: 240px;
-      height: 240px;
-      top: -146.07px;
-      right: -102.93px;
+      width: 24rem;
+      height: 24rem;
+      top: -14.607rem;
+      right: -10.293rem;
       transform: rotate(14.305deg);
     }
   }
 
   &__recent-episodes {
     &--1 {
-      width: 240px;
-      height: 240px;
-      top: -170px;
-      right: -140px;
+      width: 24rem;
+      height: 24rem;
+      top: -17rem;
+      right: -14rem;
       fill: var(--vermillion);
     }
   }
 
   &__sponsorship {
     &--1 {
-      width: 120px;
-      height: 120px;
-      top: -63px;
-      left: -74px;
+      width: 12rem;
+      height: 12rem;
+      top: -6.3rem;
+      left: -7.4rem;
       transform: scaleX(-1);
       fill: var(--vermillion);
     }
     &--2 {
-      width: 200px;
-      height: 200px;
-      top: -92px;
-      right: -87px;
+      width: 20rem;
+      height: 20rem;
+      top: -9.2rem;
+      right: -8.7rem;
       display: block;
     }
     &--3 {
-      width: 120px;
-      height: 120px;
-      bottom: -40px;
-      left: -70px;
+      width: 12rem;
+      height: 12rem;
+      bottom: -4rem;
+      left: -7rem;
       fill: transparent;
       stroke: var(--pewter-blue);
-      stroke-width: 7.5px;
+      stroke-width: .75rem;
     }
   }
 
   &__news {
     &--1 {
-      width: 185px;
-      height: 184px;
-      top: -70px;
-      left: -87px;
+      width: 18.5rem;
+      height: 18.4rem;
+      top: -7rem;
+      left: -8.7rem;
       transform: rotate(21.967deg);
     }
 
     &--2 {
-      width: 240px;
-      height: 240px;
-      bottom: -155px;
-      right: -145px;
+      width: 24rem;
+      height: 24rem;
+      bottom: -15.5rem;
+      right: -14.5rem;
       transform: rotate(135deg);
     }
   }
@@ -142,26 +142,26 @@
   &__download {
     &--1 {
       display: block;
-      width: 449.99px;
-      height: 923.59px;
+      width: 44.999rem;
+      height: 92.359rem;
       transform: rotate(10deg);
-      top: 309.77px;
-      left: -80.42px;
+      top: 30.977rem;
+      left: -8.042rem;
     }
 
     &--2 {
-      width: 522.01px;
-      height: 807.67px;
-      top: 114.51;
-      right: -102.17px;
+      width: 52.201rem;
+      height: 80.767rem;
+      top: 114.5.1rem;
+      right: -10.217rem;
       transform: rotate(-15deg);
     }
 
     &--3 {
-      width: 120px;
-      height: 120px;
-      top: -70px;
-      right: -70px;
+      width: 12rem;
+      height: 12rem;
+      top: -7rem;
+      right: -7rem;
       fill: var(--vermillion);
     }
   }
@@ -170,24 +170,24 @@
     &-1 {
       &--mask {
         &--full {
-          max-width: 158.27px;
-          height: 170.22px;
-          top: 100px;
-          left: 104.88px;
+          max-width: 15.827rem;
+          height: 17.022rem;
+          top: 10rem;
+          left: 10.488rem;
         }
 
         &--mini {
-          max-width: 70.436px;
-          height: 75.755px;
-          top: 44.5px;
-          left: 46.68px;
+          max-width: 7.0436rem;
+          height: 7.5755rem;
+          top: 4.45rem;
+          left: 4.668rem;
         }
 
         &--big {
-          max-width: 200.277px;
-          height: 215.4px;
-          top: 126.54px;
-          left: 132.72px;
+          max-width: 20.0277rem;
+          height: 21.54rem;
+          top: 12.654rem;
+          left: 13.272rem;
         }
       }
     }
@@ -195,17 +195,17 @@
     &-2 {
       &--mask {
         &--full {
-          max-width: 323.588px;
-          height: 150.739px;
-          top: 116px;
-          left: 21.2px;
+          max-width: 32.3588rem;
+          height: 15.0739rem;
+          top: 11.6rem;
+          left: 2.12rem;
         }
 
         &--mini {
-          max-width: 144.01px;
-          height: 67.085px;
-          top: 51.62px;
-          left: 9.43px;
+          max-width: 14.401rem;
+          height: 6.7085rem;
+          top: 5.162rem;
+          left: 9.4.3rem;
         }
       }
     }
@@ -213,17 +213,17 @@
     &-3 {
       &--mask {
         &--full {
-          max-width: 177px;
-          height: 305.812px;
-          top: 47.4px;
-          left: 120px;
+          max-width: 17.7rem;
+          height: 30.5812rem;
+          top: 4.74rem;
+          left: 12rem;
         }
 
         &--mini {
-          max-width: 90.352px;
-          height: 156.105px;
-          top: .19px;
-          left: 49.25px;
+          max-width: 9.0352rem;
+          height: 15.6105rem;
+          top: .1.9rem;
+          left: 4.925rem;
         }
       }
     }
@@ -231,17 +231,17 @@
     &-4 {
       &--mask {
         &--full {
-          max-width: 483.438px;
-          height: 381.552px;
-          top: -129px;
-          left: -129px;
+          max-width: 48.3438rem;
+          height: 38.1552rem;
+          top: -12.9rem;
+          left: -12.9rem;
         }
 
         &--mini {
-          max-width: 210.144px;
-          height: 169.806px;
-          top: -57.41px;
-          left: -57.41px;
+          max-width: 21.0144rem;
+          height: 16.9806rem;
+          top: -5.741rem;
+          left: -5.741rem;
         }
       }
     }
@@ -249,17 +249,17 @@
     &-5 {
       &--mask {
         &--full {
-          max-width: 283.457px;
-          height: 246.691px;
-          top: 56.33px;
-          left: 48.52px;
+          max-width: 28.3457rem;
+          height: 24.6691rem;
+          top: 5.633rem;
+          left: 4.852rem;
         }
 
         &--mini {
-          max-width: 126.15px;
-          height: 109.787px;
-          top: 25.07px;
-          left: 21.59px;
+          max-width: 12.615rem;
+          height: 10.9787rem;
+          top: 2.507rem;
+          left: 2.159rem;
         }
       }
     }
@@ -267,17 +267,17 @@
     &-6 {
       &--mask {
         &--full {
-          max-width: 286.631px;
-          height: 245.328px;
-          top: 11.97px;
-          left: 26px;
+          max-width: 28.6631rem;
+          height: 24.5328rem;
+          top: 1.197rem;
+          left: 2.6rem;
         }
 
         &--mini {
-          max-width: 127.562px;
-          height: 109.181px;
-          top: 5.327px;
-          left: 11.571px;
+          max-width: 12.7562rem;
+          height: 10.9181rem;
+          top: 5.32.7rem;
+          left: 1.1571rem;
         }
       }
     }
@@ -286,29 +286,29 @@
   &__about {
     &__hero {
       &--1 {
-        width: 120px;
-        height: 120px;
-        bottom: -60px;
+        width: 12rem;
+        height: 12rem;
+        bottom: -6rem;
         right: 0;
         fill: transparent;
         stroke: var(--vermillion);
-        stroke-width: 7.5px;
+        stroke-width: .75rem;
       }
     }
 
     &__podcast {
       &--mask {
-        width: 424.997px;
-        height: 332.398px;
-        top: 175px;
-        left: 127px;
+        width: 42.4997rem;
+        height: 33.2398rem;
+        top: 17.5rem;
+        left: 12.7rem;
       }
 
       &--1 {
-        width: 98.893px;
-        height: 98.893px;
-        top: -61.9px;
-        right: -48.99px;
+        width: 9.8893rem;
+        height: 9.8893rem;
+        top: -6.19rem;
+        right: -4.899rem;
         transform: rotate(30deg);
         fill: var(--pewter-blue)
       }
@@ -318,10 +318,10 @@
   &__hosts {
     &--1,
     &--2 {
-      width: 130px;
-      height: 130px;
-      top: 16px;
-      right: 16px;
+      width: 13rem;
+      height: 13rem;
+      top: 1.6rem;
+      right: 1.6rem;
     }
 
     &--1 {
@@ -331,38 +331,38 @@
 
   &__sponsors {
     &--1 {
-      width: 74px;
-      height: 74px;
-      top: -40px;
-      left: -72px;
+      width: 7.4rem;
+      height: 7.4rem;
+      top: -4rem;
+      left: -7.2rem;
       fill: var(--vermillion)
     }
   }
 
   &__feedback {
     &--1 {
-      width: 120px;
-      height: 120px;
-      bottom: 262px;
-      left: 20px;
+      width: 12rem;
+      height: 12rem;
+      bottom: 26.2rem;
+      left: 2rem;
       fill: transparent;
       stroke: var(--vermillion);
-      stroke-width: 7.5px;
+      stroke-width: .75rem;
     }
 
     &--2 {
-      width: 78px;
-      height: 78px;
-      top: 327px;
-      right: 140px;
+      width: 7.8rem;
+      height: 7.8rem;
+      top: 32.7rem;
+      right: 14rem;
     }
 
     &--3 {
       display: block;
-      width: 78px;
-      height: 78px;
-      top: -50px;
-      right: -40px;
+      width: 7.8rem;
+      height: 7.8rem;
+      top: -5rem;
+      right: -4rem;
       transform: rotate(13.874deg);
       fill: var(--pewter-blue);
     }
@@ -371,22 +371,22 @@
   &__episode {
     &__hero {
       &--1 {
-        width: 120px;
-        height: 120px;
-        bottom: -60px;
+        width: 12rem;
+        height: 12rem;
+        bottom: -6rem;
         right: 0;
         fill: transparent;
         stroke: var(--vermillion);
-        stroke-width: 7.5px;
+        stroke-width: .75rem;
       }
     }
 
     &__browse {
       &--1 {
-        width: 240px;
-        height: 240px;
-        bottom: -163.92px;
-        left: -132.08px;
+        width: 24rem;
+        height: 24rem;
+        bottom: -16.392rem;
+        left: -13.208rem;
         transform: rotate(-150deg);
       }
     }
@@ -394,10 +394,10 @@
 
   &__article {
     &--1 {
-      width: 103.238px;
-      height: 103.238px;
-      top: -58.62px;
-      left: -84.62px;
+      width: 10.3238rem;
+      height: 10.3238rem;
+      top: -5.862rem;
+      left: -8.462rem;
       transform: rotate(-45deg);
       fill: var(--pewter-blue);
     }

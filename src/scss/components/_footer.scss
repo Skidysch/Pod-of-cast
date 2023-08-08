@@ -1,17 +1,17 @@
 .footer {
-  padding-bottom: 80px;
+  padding-bottom: 8rem;
   position: relative;
 
   &__top {
-    padding-top: 140px;
-    margin-bottom: 140px;
+    padding-top: 14rem;
+    margin-bottom: 14rem;
     display: flex;
     justify-content: space-between;
   }
 
   &__bottom {
-    padding-top: 20px;
-    border-top: .5px solid var(--davys-grey);
+    padding-top: 2rem;
+    border-top: .05rem solid var(--davys-grey);
     display: flex;
     justify-content: space-between;
   }
@@ -22,10 +22,10 @@
   }
 
   &__logo {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     display: flex;
     align-items: flex-end;
-    gap: 25px;
+    gap: 2.5rem;
 
     & .header__logo {
       margin: 0;
@@ -33,17 +33,17 @@
   }
 
   &__description {
-    width: 275px;
-    margin-bottom: 40px;
+    width: 27.5rem;
+    margin-bottom: 4rem;
   }
 
   &__menu {
-    width: 270px;
+    width: 27rem;
     flex-wrap: wrap;
-    gap: 20px 90px;
+    gap: 2rem 9rem;
 
     &-item {
-      width: calc((100% - 90px) / 2);
+      width: calc((100% - 9rem) / 2);
     }
 
     &-link {
@@ -57,13 +57,13 @@
   }
 
   &__title {
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
     color: var(--davys-grey);
   }
 
   &__platforms {
     &__list {
-      margin-bottom: 60px;
+      margin-bottom: 6rem;
       justify-content: space-between;
     }
 
@@ -77,13 +77,13 @@
 
     &__image {
       display: block;
-      height: 22px;
+      height: 2.2rem;
     }
   }
 
   &__marketplaces {
     &__list {
-      gap: 20px;
+      gap: 2rem;
     }
 
     &__item {
@@ -93,11 +93,11 @@
         transform: scale(.9);
       }
     }
-    
+
     &__image {
       display: block;
-      height: 36px;
-      width: 36px;
+      height: 3.6rem;
+      width: 3.6rem;
     }
   }
 
@@ -109,6 +109,6 @@
 
   &__policy {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
   }
 }
