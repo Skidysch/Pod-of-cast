@@ -6,10 +6,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 8rem 2rem;
+
+    @include mobile {
+      margin-bottom: 6rem;
+      gap: 4rem 2rem;
+    }
   }
 
   &__item {
     width: calc((100% - 4rem) / 3);
+
+    @include mobile {
+      width: calc((100% - 2rem) / 2)
+    }
 
     &-image {
       width: 7.8rem;
@@ -19,6 +28,7 @@
 
     &-title {
       margin-bottom: 1rem;
+      font-weight: 700;
       line-height: 1.4;
       letter-spacing: -.0453rem;
     }

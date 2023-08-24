@@ -1,9 +1,14 @@
 .sponsorship {
-
   &__list {
     position: relative;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem 2rem;
+
+    @include mobile {
+      max-width: 37.5rem;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__item {
@@ -13,6 +18,17 @@
     gap: 2rem;
     text-align: left;
 
+    @include small-tablet {
+      width: calc((100% - 2rem) / 2);
+      gap: 0;
+    }
+
+    @include mobile {
+      max-width: 37.5rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+
     &-top,
     &-bottom {
       border: .15rem solid #000;
@@ -21,11 +37,41 @@
 
     &-top {
       padding: 6rem 4rem 3rem;
+      position: relative;
+      background-color: #fff;
+
+      @include tablet {
+        padding: 4rem 3rem 2rem;
+      }
+
+      @include small-tablet {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      @include mobile {
+        padding: 3rem 2rem 1.5rem;
+      }
     }
 
     &-bottom {
-      min-height: 42rem;
+      flex-grow: 1;
+      position: relative;
+      background-color: #fff;
       padding: 4rem 4rem 6rem;
+
+      @include tablet {
+        padding: 3rem 3rem 4rem;
+      }
+
+      @include small-tablet {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      @include mobile {
+        padding: 2rem 2rem 3rem;
+      }
 
       & p {
         margin-bottom: 2rem;
@@ -42,8 +88,6 @@
         }
 
         &-top {
-          position: relative;
-
           &::before {
             content: 'MOST POPULAR';
             padding: .3rem .6rem;
@@ -58,6 +102,18 @@
             font-size: 1.2rem;
             font-weight: 700;
             text-transform: uppercase;
+
+            @include tablet {
+              font-size: .9rem;
+            }
+
+            @include small-tablet {
+              font-size: 0.8rem;
+            }
+
+            @include mobile {
+              font-size: 0.7rem;
+            }
           }
         }
       }
@@ -72,17 +128,26 @@
 
   &__title {
     margin-bottom: 2rem;
+    font-weight: 700;
     line-height: 1.4;
+
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__description {
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
+
+    @include mobile {
+      margin-bottom: 4rem;
+    }
   }
 
   &__action {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   &__price {
@@ -92,6 +157,18 @@
       font-weight: 700;
       line-height: 1.4;
       letter-spacing: -.0453rem;
+
+      @include tablet {
+        font-size: 1.77rem;
+      }
+
+      @include small-tablet {
+        font-size: 1.57rem;
+      }
+
+      @include mobile {
+        font-size: 1.38rem;
+      }
     }
   }
 

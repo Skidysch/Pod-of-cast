@@ -2,30 +2,36 @@
   &__list {
     gap: 2.5rem;
 
-    &--full-episode {
-      gap: 1rem;
+    &--episode {
+      width: 24.66%;
+      height: 6.43%;
+      justify-content: space-between;
       position: absolute;
-      top: 2rem;
-      right: 2rem;
-    }
-
-    &--mini-episode {
-      gap: .6rem;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-
-    &--big-episode {
-      gap: 1.265rem;
-      position: absolute;
-      top: 2.531rem;
-      right: 2.531rem;
+      top: 5.36%;
+      right: 5.36%;
     }
 
     &--follow {
       gap: 1rem;
     }
+
+    &--footer {
+      width: 12.2rem;
+
+      @include mobile {
+        margin: 0 auto;
+      }
+    }
+
+    &--download {
+      width: 11.2rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    width: 26.09%;
+    height: 100%;
   }
 
   &__icon {

@@ -1,6 +1,14 @@
 .hosts {
   &__list {
     gap: 2rem;
+
+    @include tablet {
+      gap: 1rem;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -14,13 +22,28 @@
     background-color: #fff;
     transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
+    @include tablet {
+      width: calc((100% - 1rem) / 2);
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      max-width: 53.6rem;
+
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+    }
+
     @include hover {
       transform: translate(-1rem, -1rem);
       box-shadow: 1rem 1rem 0 0 #000;
     }
 
     &-left {
-      min-width: 25.9rem;
+      min-width: 53.07%;
       overflow: hidden;
       transition: transform .3s ease-in-out;
 
@@ -47,6 +70,14 @@
     height: 48.8rem;
     object-position: 100%;
     border-radius: .8rem;
+
+    @include tablet {
+      height: 40rem;
+    }
+
+    @include mobile {
+      height: 35rem;
+    }
   }
 
   &__role {

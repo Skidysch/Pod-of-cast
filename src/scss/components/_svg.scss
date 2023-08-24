@@ -2,17 +2,9 @@
 .spotify--static,
 .youtube--static {
   display: block;
+  width: 100%;
+  height: 100%;
   fill: #fff;
-
-  &--full {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-
-  &--mini {
-    width: 1.2rem;
-    height: 1.2rem;
-  }
 }
 
 .arrow-left,
@@ -37,7 +29,7 @@
 
 .form__search__icon {
   width: 2.4rem;
-  height: 2.4rem;
+  aspect-ratio: 1;
   fill: transparent;
   stroke: var(--davys-grey);
   position: absolute;
@@ -45,4 +37,9 @@
   left: 4rem;
   z-index: 1;
   transition: transform .3s ease-in-out;
+
+  @include mobile {
+    left: 2rem;
+    top: 1.5rem;
+  }
 }

@@ -1,19 +1,38 @@
 .form {
 
   &__feedback {
+    position: relative;
     grid-column: 3 / 8 span;
     grid-template-columns: repeat(8, 1fr);
     gap: 4rem 2rem;
     padding-top: 4rem;
     border-top: .05rem solid var(--davys-grey);
 
+    @include tablet {
+      grid-column: 2 / 10 span;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
+      gap: 3rem 2rem;
+    }
+
+    @include mobile {
+      gap: 2rem;
+    }
+
     & .btn {
-      min-width: 20rem;
+      width: max-content;
       grid-column: 4 / 2 span;
+      justify-content: center;
     }
 
     &__item {
       grid-column: 4 span;
+
+      @include mobile {
+        grid-column: 8 span;
+      }
 
       &--wide {
         grid-column: 8 span;
@@ -63,13 +82,19 @@
   }
 
   &__search {
-    width: 57rem;
+    max-width: 57rem;
+    width: calc(100% - 4rem);
     height: 7.4rem;
     position: absolute;
     left: 50%;
     bottom: -3.7rem;
     transform: translateX(-50%);
     z-index: 1;
+
+    @include mobile {
+      height: 5.4rem;
+      bottom: -2.24em;
+    }
 
     &__input {
       padding: 2.4rem 4rem 2.4rem 9.8rem;
@@ -81,6 +106,10 @@
       font-weight: 700;
       box-shadow: .6rem .6rem 0 0 var(--pewter-blue);
       transition: box-shadow .3s ease-in-out, transform .3s ease-in-out, border .3s ease-in-out;
+
+      @include mobile {
+        padding: 1.5rem 2rem 1.5rem 6rem;
+      }
 
       &::placeholder {
         color: var(--davys-grey);

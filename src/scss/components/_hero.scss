@@ -4,11 +4,26 @@
   padding-bottom: 14rem;
   background-color: var(--champagne);
 
+  @include tablet {
+    padding-top: 7.4rem;
+    padding-bottom: 10rem;
+  }
+
+  @include mobile {
+    padding-top: 6.4rem;
+    padding-bottom: 8rem;
+  }
+
   &__main {
     margin-top: 6.4rem;
     margin-bottom: 12rem;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+    }
   }
 
   &__title {
@@ -28,6 +43,10 @@
     color: var(--davys-grey);
     font-style: normal;
     font-weight: 500;
+
+    @include small-tablet {
+      margin-bottom: 4rem;
+    }
   }
 
   &__buttons {
@@ -37,25 +56,52 @@
 
   &__stats {
     &__list {
+      max-width: 116rem;
+      width: calc(100vw - var(--container-offset) * 2);
       position: absolute;
       bottom: -11.9rem;
       z-index: 5;
       gap: 2rem;
+
+      @include tablet {
+        bottom: -8.9rem;
+      }
+
+      @include small-tablet {
+        bottom: -7.9rem;
+      }
+
+      @include mobile {
+        bottom: -5.9rem;
+      }
     }
 
     &__item {
-      width: 37.3rem;
-      padding: 5.9rem 0;
+      width: calc((100% - 4rem) / 3);
+      padding: 5.9rem 1rem;
       text-align: center;
       border: .15rem solid #000;
       border-radius: .8rem;
       background-color: #fff;
       box-shadow: .6rem .6rem 0 0 var(--vermillion);
+
+      @include tablet {
+        width: calc((100% - 2rem) / 3);
+        padding: 3.9rem 1rem;
+      }
+
+      @include mobile {
+        padding: 1.9rem 1rem;
+      }
     }
 
     &__number {
       margin-bottom: 2rem;
       text-transform: uppercase;
+
+      @include small-tablet {
+        margin-bottom: 1rem;
+      }
 
       & span {
         color: var(--vermillion);
@@ -70,22 +116,40 @@
   &__support {
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     border-top: .1rem solid var(--davys-grey);
     border-bottom: .1rem solid var(--davys-grey);
 
+    @include small-tablet {
+      padding: 1.5rem 0;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
     &-title {
+      font-weight: 700;
       line-height: 1.4;
+
+      @include small-tablet {
+        font-size: 2rem;
+      }
     }
 
     &-list {
       gap: 2rem;
+      flex-basis: 80%;
+      justify-content: space-evenly;
+
+      @include small-tablet {
+        flex-basis: 100%;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
 
     &-item {
-      width: 27.5rem;
-      height: 8.4rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -106,8 +170,11 @@
 
     &-image {
       display: block;
-      width: 100%;
-      height: 100%;
+      height: 3.4rem;
+
+      @include small-tablet {
+        height: 3rem;
+      }
     }
   }
 
@@ -115,12 +182,20 @@
     &__slider {
       margin: 0 auto;
       margin-bottom: 10rem;
-      width: 116rem;
+      max-width: 100%;
+
+      @include tablet {
+        margin-bottom: 6rem;
+      }
+
+      @media (max-width: 492px) {
+        max-width: 32rem;
+      }
     }
 
     &__item {
-      width: 37.3rem;
-      height: 37.3rem;
+      width: 100%;
+      aspect-ratio: 1 / 1;
       border-radius: 1.2rem;
       position: relative;
       overflow: hidden;

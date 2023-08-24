@@ -6,11 +6,20 @@
   }
 
   &__slider {
-    width: 116rem;
+    width: calc(100% + 2rem);
     overflow: hidden;
     margin: 0 auto;
     padding-bottom: 10.8rem;
     position: relative;
+
+    @include tablet {
+      padding-bottom: 8.8rem;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      padding-bottom: 6.8rem;
+    }
 
     & .swiper-button-next,
     & .swiper-button-prev {
@@ -31,7 +40,7 @@
 
   &__item {
     box-sizing: border-box;
-    width: 57rem;
+    width: 100%;
     padding: 4rem 1.7rem 3rem;
     display: flex;
     flex-direction: column;
@@ -42,7 +51,7 @@
   }
 
   &__logo {
-    width: 35.5rem;
+    width: 66.23%;
     height: 5.4rem;
     padding-bottom: 2rem;
     margin-bottom: 3rem;

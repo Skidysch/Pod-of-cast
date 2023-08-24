@@ -7,10 +7,26 @@
       margin-bottom: 14rem;
       display: flex;
       flex-direction: column;
+
+      @include tablet {
+        margin-bottom: 10rem;
+      }
+
+      @include mobile {
+        margin-bottom: 7rem;
+      }
     }
 
     &__subtitle {
       margin-top: 2.8rem;
+
+      @include small-tablet {
+        margin-top: 1.5rem;
+      }
+
+      @include mobile {
+        margin-top: 1rem;
+      }
     }
 
     &__body {
@@ -35,7 +51,7 @@
   }
 
   &__button-wrapper {
-    width: 21rem;
+    width: fit-content;
     margin: 0 auto;
     position: relative;
   }

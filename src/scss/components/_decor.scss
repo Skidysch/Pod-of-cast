@@ -3,29 +3,83 @@
 
   &__hero {
     &--1 {
-      width: 39.9604rem;
-      height: 43.7627rem;
-      top: 14.719rem;
-      left: -20.736rem;
+      width: 40rem;
+      aspect-ratio: .909;
+      top: 11.7rem;
+      left: -20.7rem;
       transform: rotate(-45deg);
       fill: transparent;
       stroke: #000;
       stroke-width: .8rem;
       stroke-linecap: round;
+
+      @include for-desktop {
+        width: 35rem;
+        top: 14.7rem;
+      }
+
+      @include tablet {
+        width: 32rem;
+        top: 9.7rem;
+      }
+
+      @include small-tablet {
+        width: 25rem;
+      }
+
+      @include mobile {
+        top: 8.7rem;
+      }
     }
     &--2 {
       width: 6.4rem;
-      height: 6.4rem;
-      top: 35.061rem;
+      aspect-ratio: 1;
+      top: 33rem;
       left: 26.2rem;
       fill: var(--vermillion);
+
+      @include for-desktop {
+        width: 5rem;
+        top: 33.5rem;
+        left: 21.2rem;
+      }
+
+      @include tablet {
+        width: 4.5rem;
+        top: 26.6rem;
+        left: 17.2rem;
+      }
+
+      @include small-tablet {
+        width: 4rem;
+        top: 23rem;
+        left: 9rem;
+      }
+
+      @include mobile {
+        top: 22rem;
+      }
     }
     &--3 {
       width: 12rem;
-      height: 16.7rem;
+      aspect-ratio: .718;
       top: 23.4rem;
       right: -2.8rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        top: 31.4rem;
+        right: -3.8rem;
+      }
+
+      @include mobile {
+        width: 8rem;
+      }
     }
+
   }
 
   &--scribble {
@@ -41,6 +95,18 @@
     appearance: visible;
     z-index: 1;
 
+    @include tablet {
+      width: 10rem;
+      height: 10rem;
+      top: -5rem;
+    }
+
+    @include mobile {
+      width: 8rem;
+      height: 8rem;
+      top: -4rem;
+    }
+
     &--vermillion {
       stroke: var(--vermillion);
     }
@@ -49,67 +115,172 @@
   &__features {
     &--1 {
       width: 12rem;
-      height: 12rem;
+      aspect-ratio: 1;
       left: -6rem;
       bottom: 4.9rem;
       fill: transparent;
       stroke: var(--vermillion);
       stroke-width: .75rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        width: 9rem;
+      }
+
+      @include mobile {
+        width: 7rem;
+        left: -4rem;
+        bottom: 6.9rem;
+      }
     }
     &--2 {
       width: 20rem;
-      height: 20rem;
+      aspect-ratio: 1;
       top: -7.8rem;
       right: -5.7rem;
+
+      @include tablet {
+        width: 15rem;
+        top: -6.8rem;
+      }
+
+      @include small-tablet {
+        width: 12rem;
+        top: -5.8rem;
+      }
+
+      @include mobile {
+        width: 9rem;
+        top: -2.8em;
+      }
     }
   }
 
   &__testimonials {
     &--1 {
       width: 10.5rem;
-      height: 10.5rem;
+      aspect-ratio: 1;
       top: -6.9rem;
       left: -9.9rem;
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 8.5rem;
+        top: -5.9rem;
+        left: -7.9rem;
+      }
+
+      @include small-tablet {
+        width: 6.5rem;
+        top: -4.9rem;
+        left: -5.9rem;
+      }
     }
   }
 
   &__membership {
     &--1 {
       width: 24rem;
-      height: 24rem;
-      top: -14.607rem;
-      right: -10.293rem;
+      aspect-ratio: 1;
+      top: -14.6rem;
+      right: -10.3rem;
       transform: rotate(14.305deg);
+
+      @include tablet {
+        width: 20rem;
+        top: -12.6rem;
+      }
+
+      @include small-tablet {
+        width: 16rem;
+        top: -9.6rem;
+        right: -7.3rem;
+      }
     }
   }
 
   &__recent-episodes {
     &--1 {
       width: 24rem;
-      height: 24rem;
+      aspect-ratio: 1;
       top: -17rem;
       right: -14rem;
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 20rem;
+        top: -14.16rem;
+        right: -11.66rem;
+      }
+
+      @include small-tablet {
+        width: 17rem;
+        top: -11.16rem;
+        right: -8.66rem;
+      }
+
+      @include mobile {
+        width: 15rem;
+        top: -9.16rem;
+        right: -7.66rem;
+      }
     }
   }
 
   &__sponsorship {
     &--1 {
       width: 12rem;
-      height: 12rem;
+      aspect-ratio: 1;
       top: -6.3rem;
       left: -7.4rem;
       transform: scaleX(-1);
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 9rem;
+        top: -4.3rem;
+        left: -5.4rem;
+      }
+
+      @include small-tablet {
+        width: 7rem;
+        top: -3.3rem;
+        left: -4.4rem;
+      }
+
+      @include mobile {
+        width: 6rem;
+        top: -3rem;
+        left: -3.8rem;
+      }
     }
+
     &--2 {
       width: 20rem;
       height: 20rem;
       top: -9.2rem;
       right: -8.7rem;
       display: block;
+
+      @include tablet {
+        width: 15rem;
+        top: -9.5rem;
+      }
+
+      @include small-tablet {
+        width: 12rem;
+        right: -7rem;
+      }
+
+      @include mobile {
+        width: 9rem;
+        right: -5rem;
+      }
     }
+
     &--3 {
       width: 12rem;
       height: 12rem;
@@ -118,167 +289,176 @@
       fill: transparent;
       stroke: var(--pewter-blue);
       stroke-width: .75rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        width: 9rem;
+        bottom: -5rem;
+        left: -4rem;
+      }
+
+      @include mobile {
+        width: 7rem;
+        left: -3rem;
+        bottom: -5rem;
+      }
     }
   }
 
   &__news {
     &--1 {
       width: 18.5rem;
-      height: 18.4rem;
+      aspect-ratio: 1;
       top: -7rem;
       left: -8.7rem;
       transform: rotate(21.967deg);
+
+      @include tablet {
+        width: 15rem;
+        top: -5.5rem;
+        left: -7rem;
+      }
+
+      @include mobile {
+        width: 12rem;
+        top: -4.5rem;
+        left: -5.5rem;
+      }
     }
 
     &--2 {
       width: 24rem;
-      height: 24rem;
+      aspect-ratio: 1;
       bottom: -15.5rem;
       right: -14.5rem;
       transform: rotate(135deg);
+
+      @include tablet {
+        width: 20rem;
+        bottom: -12.5rem;
+        right: -11.5rem;
+      }
+
+      @include mobile {
+        width: 17rem;
+        bottom: -10.5rem;
+        right: -9.5rem;
+      }
     }
   }
 
   &__download {
     &--1 {
       display: block;
-      width: 44.999rem;
-      height: 92.359rem;
+      width: 45rem;
+      aspect-ratio: .49;
       transform: rotate(10deg);
-      top: 30.977rem;
-      left: -8.042rem;
+      top: 31rem;
+      left: -8rem;
+
+      @include tablet {
+        width: 35rem;
+      }
+
+      @include small-tablet {
+        left: -16rem;
+        top: 29rem;
+      }
+
+      @include mobile {
+        left: -25rem;
+        top: 14rem;
+      }
     }
 
     &--2 {
-      width: 52.201rem;
-      height: 80.767rem;
-      top: 114.5.1rem;
-      right: -10.217rem;
+      width: 52.2rem;
+      aspect-ratio: .6;
+      top: 27.5rem;
+      right: -15.2rem;
       transform: rotate(-15deg);
+
+      @include tablet {
+        width: 45.2rem;
+        top: 20.5rem;
+        right: -20.2rem;
+      }
+
+      @include small-tablet {
+        right: -27.2rem;
+      }
     }
 
     &--3 {
       width: 12rem;
-      height: 12rem;
+      aspect-ratio: 1;
       top: -7rem;
       right: -7rem;
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 10rem;
+        top: -6rem;
+        right: -6rem;
+      }
     }
   }
 
   &__episode {
     &-1 {
       &--mask {
-        &--full {
-          max-width: 15.827rem;
-          height: 17.022rem;
-          top: 10rem;
-          left: 10.488rem;
-        }
-
-        &--mini {
-          max-width: 7.0436rem;
-          height: 7.5755rem;
-          top: 4.45rem;
-          left: 4.668rem;
-        }
-
-        &--big {
-          max-width: 20.0277rem;
-          height: 21.54rem;
-          top: 12.654rem;
-          left: 13.272rem;
-        }
+        max-width: 42.43%;
+        height: 45.64%;
+        top: 26.81%;
+        left: 28.12%;
       }
     }
 
     &-2 {
       &--mask {
-        &--full {
-          max-width: 32.3588rem;
-          height: 15.0739rem;
-          top: 11.6rem;
-          left: 2.12rem;
-        }
-
-        &--mini {
-          max-width: 14.401rem;
-          height: 6.7085rem;
-          top: 5.162rem;
-          left: 9.4.3rem;
-        }
+        max-width: 86.75%;
+        height: 40.41%;
+        top: 31.1%;
+        left: 5.68%;
       }
     }
 
     &-3 {
       &--mask {
-        &--full {
-          max-width: 17.7rem;
-          height: 30.5812rem;
-          top: 4.74rem;
-          left: 12rem;
-        }
-
-        &--mini {
-          max-width: 9.0352rem;
-          height: 15.6105rem;
-          top: .1.9rem;
-          left: 4.925rem;
-        }
+        max-width: 47.45%;
+        height: 81.99%;
+        top: 12.71%;
+        left: 32.17%;
       }
     }
 
     &-4 {
       &--mask {
-        &--full {
-          max-width: 48.3438rem;
-          height: 38.1552rem;
-          top: -12.9rem;
-          left: -12.9rem;
-        }
-
-        &--mini {
-          max-width: 21.0144rem;
-          height: 16.9806rem;
-          top: -5.741rem;
-          left: -5.741rem;
-        }
+        max-width: 129.61%;
+        height: 102.29%;
+        top: -34.58%;
+        left: -34.58%;
       }
     }
 
     &-5 {
       &--mask {
-        &--full {
-          max-width: 28.3457rem;
-          height: 24.6691rem;
-          top: 5.633rem;
-          left: 4.852rem;
-        }
-
-        &--mini {
-          max-width: 12.615rem;
-          height: 10.9787rem;
-          top: 2.507rem;
-          left: 2.159rem;
-        }
+        max-width: 75.99%;
+        height: 66.14%;
+        top: 15.1%;
+        left: 13.01%;
       }
     }
 
     &-6 {
       &--mask {
-        &--full {
-          max-width: 28.6631rem;
-          height: 24.5328rem;
-          top: 1.197rem;
-          left: 2.6rem;
-        }
-
-        &--mini {
-          max-width: 12.7562rem;
-          height: 10.9181rem;
-          top: 5.32.7rem;
-          left: 1.1571rem;
-        }
+        max-width: 76.84%;
+        height: 65.77%;
+        top: 3.21%;
+        left: 6.97%;
       }
     }
   }
@@ -287,30 +467,55 @@
     &__hero {
       &--1 {
         width: 12rem;
-        height: 12rem;
+        aspect-ratio: 1;
         bottom: -6rem;
         right: 0;
         fill: transparent;
         stroke: var(--vermillion);
         stroke-width: .75rem;
+
+        @include tablet {
+          width: 9rem;
+          bottom: -13rem;
+        }
+
+        @include mobile {
+          width: 6rem;
+          bottom: -10rem;
+        }
       }
     }
 
     &__podcast {
       &--mask {
-        width: 42.4997rem;
-        height: 33.2398rem;
-        top: 17.5rem;
-        left: 12.7rem;
+        width: 36.64%;
+        height: 51.94%;
+        top: 27.34%;
+        left: 10.95%;
       }
 
       &--1 {
-        width: 9.8893rem;
-        height: 9.8893rem;
+        width: 9.9rem;
+        aspect-ratio: 1;
         top: -6.19rem;
-        right: -4.899rem;
+        right: -4.9rem;
         transform: rotate(30deg);
-        fill: var(--pewter-blue)
+        fill: var(--pewter-blue);
+
+        @include tablet {
+          width: 9rem;
+          top: -5.19rem;
+        }
+
+        @include small-tablet {
+          width: 8rem;
+          top: -4.19rem;
+          right: -4.2rem;
+        }
+
+        @include mobile {
+          width: 7rem;
+        }
       }
     }
   }
@@ -319,9 +524,17 @@
     &--1,
     &--2 {
       width: 13rem;
-      height: 13rem;
+      aspect-ratio: 1;
       top: 1.6rem;
       right: 1.6rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include mobile {
+        width: 8rem;
+      }
     }
 
     &--1 {
@@ -332,39 +545,91 @@
   &__sponsors {
     &--1 {
       width: 7.4rem;
-      height: 7.4rem;
+      aspect-ratio: 1;
       top: -4rem;
       left: -7.2rem;
-      fill: var(--vermillion)
+      fill: var(--vermillion);
+
+      @include tablet {
+        width: 7rem;
+      }
+
+      @include small-tablet {
+        width: 5rem;
+        top: -3rem;
+        left: -5.2rem;
+      }
     }
   }
 
   &__feedback {
     &--1 {
       width: 12rem;
-      height: 12rem;
+      aspect-ratio: 1;
       bottom: 26.2rem;
       left: 2rem;
       fill: transparent;
       stroke: var(--vermillion);
       stroke-width: .75rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        bottom: 15.2rem;
+        width: 8rem;
+      }
+
+      @include mobile {
+        bottom: 11.2rem;
+      }
     }
 
     &--2 {
       width: 7.8rem;
-      height: 7.8rem;
+      aspect-ratio: 1;
       top: 32.7rem;
       right: 14rem;
+
+      @include for-desktop {
+        right: 5rem;
+      }
+
+      @include small-tablet {
+        width: 6rem;
+        top: 29.7rem;
+        right: 2rem;
+      }
+
+      @include mobile {
+        top: 31.7rem;
+      }
     }
 
     &--3 {
       display: block;
       width: 7.8rem;
-      height: 7.8rem;
+      aspect-ratio: 1;
       top: -5rem;
       right: -4rem;
       transform: rotate(13.874deg);
       fill: var(--pewter-blue);
+
+      @include tablet {
+        width: 6.8rem;
+        top: -4rem;
+      }
+
+      @include small-tablet {
+        width: 5.8rem;
+        right: -3rem;
+      }
+
+      @include mobile {
+        width: 4.8rem;
+        top: -3rem;
+      }
     }
   }
 
@@ -372,34 +637,77 @@
     &__hero {
       &--1 {
         width: 12rem;
-        height: 12rem;
+        aspect-ratio: 1;
         bottom: -6rem;
         right: 0;
         fill: transparent;
         stroke: var(--vermillion);
         stroke-width: .75rem;
+
+        @include tablet {
+          width: 10rem;
+          bottom: -4rem;
+        }
+
+        @include small-tablet {
+          width: 8rem;
+        }
+
+        @include mobile {
+          width: 6rem;
+          bottom: -3rem;
+        }
       }
     }
 
     &__browse {
       &--1 {
         width: 24rem;
-        height: 24rem;
-        bottom: -16.392rem;
-        left: -13.208rem;
+        aspect-ratio: 1;
+        bottom: -16.4rem;
+        left: -13.2rem;
         transform: rotate(-150deg);
+
+        @include tablet {
+          width: 20rem;
+          left: -9.2rem;
+        }
+
+        @include mobile {
+          width: 13rem;
+          left: -5.2rem;
+          bottom: -14.4rem;
+        }
       }
     }
   }
 
   &__article {
     &--1 {
-      width: 10.3238rem;
-      height: 10.3238rem;
-      top: -5.862rem;
-      left: -8.462rem;
+      width: 10.32rem;
+      aspect-ratio: 1;
+      top: -5.86rem;
+      left: -8.46rem;
       transform: rotate(-45deg);
       fill: var(--pewter-blue);
+
+      @include tablet {
+        width: 9rem;
+        top: -4.86rem;
+        left: -6.46rem;
+      }
+
+      @include small-tablet {
+        width: 8rem;
+        top: -4.36rem;
+        left: -5.46rem;
+      }
+
+      @include mobile {
+        width: 7rem;
+        top: -3.86rem;
+        left: -4.46rem;
+      }
     }
   }
 }

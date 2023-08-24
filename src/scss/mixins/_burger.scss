@@ -8,6 +8,7 @@
   position: relative;
   border: none;
   padding: 0;
+  z-index: 101;
   width: var(--burger-width);
   height: var(--burger-height);
   color: #000;
@@ -18,8 +19,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    width: 100%;
+    right: 0;
     height: var(--burger-line-height);
     background-color: currentColor;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
@@ -27,10 +27,12 @@
 
   &::before {
     top: 0;
+    width: 80%;
   }
 
   &::after {
     top: calc(100% - var(--burger-line-height));
+    width: 60%;
   }
 
   &__line {
@@ -47,14 +49,16 @@
   &--active {
     &::before {
       top: 50%;
+      width: 100%;
       transform: rotate(45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, width .3s ease-in-out;
     }
 
     &::after {
       top: 50%;
+      width: 100%;
       transform: rotate(-45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, width .3s ease-in-out;
     }
 
     .burger__line {

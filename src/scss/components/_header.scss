@@ -1,12 +1,24 @@
 .header {
   height: 9.8rem;
-  position: fixed;
   padding-top: 2.4rem;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom: .2rem solid #000;
   background: var(--champagne);
+
+  @include tablet {
+    height: 7.4rem;
+    padding-top: 0;
+  }
+
+  @include mobile {
+    height: 6.4rem;
+  }
 
   &__container {
     display: flex;
@@ -20,9 +32,22 @@
 
   &__logo {
     display: block;
-    height: 7.4rem;
     width: 7.4rem;
+    height: 7.4rem;
     margin-right: 12.3rem;
+
+    @include tablet {
+      margin-right: 6rem;
+    }
+
+    @include small-tablet {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
 
     & path {
       transition: fill .3s ease-in-out;
@@ -41,5 +66,9 @@
 
   &__right {
     gap: 2rem;
+
+    @include mobile {
+      gap: 0.8rem;
+    }
   }
 }
