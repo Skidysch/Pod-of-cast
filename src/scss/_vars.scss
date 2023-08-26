@@ -19,11 +19,6 @@
   // media
   @include for-desktop {
     --content-width: 106rem;
-    --container-offset: 5rem;
-  }
-
-  @include small-tablet {
-    --content-width: 72.8rem;
     --container-offset: 2rem;
   }
 }
