@@ -1,26 +1,49 @@
 .hosts {
   &__list {
-    gap: 20px;
+    gap: 2rem;
+
+    @include tablet {
+      gap: 1rem;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__item {
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 2rem) / 2);
     display: flex;
     position: relative;
-    gap: 20px;
-    padding: 16px;
-    border: 2px solid #000;
-    border-radius: 8px;
+    gap: 2rem;
+    padding: 1.6rem;
+    border: .2rem solid #000;
+    border-radius: .8rem;
     background-color: #fff;
     transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
+    @include tablet {
+      width: calc((100% - 1rem) / 2);
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      max-width: 53.6rem;
+
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+    }
+
     @include hover {
-      transform: translate(-10px, -10px);
-      box-shadow: 10px 10px 0 0 #000;
+      transform: translate(-1rem, -1rem);
+      box-shadow: 1rem 1rem 0 0 #000;
     }
 
     &-left {
-      min-width: 259px;
+      min-width: 53.07%;
       overflow: hidden;
       transition: transform .3s ease-in-out;
 
@@ -44,18 +67,26 @@
 
   &__image {
     display: block;
-    height: 488px;
+    height: 48.8rem;
     object-position: 100%;
-    border-radius: 8px;
+    border-radius: .8rem;
+
+    @include tablet {
+      height: 40rem;
+    }
+
+    @include mobile {
+      height: 35rem;
+    }
   }
 
   &__role {
-    font-size: 14px;
-    margin-bottom: 6px;
+    font-size: 1.4rem;
+    margin-bottom: .6rem;
   }
 
   &__name {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: left;
     transition: color .3s ease-in-out;
 
@@ -65,17 +96,17 @@
   }
 
   &__description {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: left;
   }
 
   &__follow {
     width: 100%;
-    padding-top: 10px;
+    padding-top: 1rem;
     display: flex;
     justify-content: flex-end;
-    gap: 19px;
-    border-top: .5px solid var(--davys-grey);
+    gap: 1.9rem;
+    border-top: .05rem solid var(--davys-grey);
 
     &__text {
       font-weight: 700;

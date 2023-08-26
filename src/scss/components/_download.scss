@@ -4,13 +4,29 @@
 
   & .section {
     &__header {
-      margin-bottom: 140px;
+      margin-bottom: 14rem;
       display: flex;
       flex-direction: column;
+
+      @include tablet {
+        margin-bottom: 10rem;
+      }
+
+      @include mobile {
+        margin-bottom: 7rem;
+      }
     }
 
     &__subtitle {
-      margin-top: 28px;
+      margin-top: 2.8rem;
+
+      @include small-tablet {
+        margin-top: 1.5rem;
+      }
+
+      @include mobile {
+        margin-top: 1rem;
+      }
     }
 
     &__body {
@@ -19,23 +35,23 @@
   }
 
   &__beta {
-    max-width: 52px;
+    max-width: 5.2rem;
     margin: 0 auto;
-    padding: 3px 6px;
-    margin-bottom: 20px;
-    border: 1px solid var(--vermillion);
-    border-radius: 4px;
+    padding: .3rem .6rem;
+    margin-bottom: 2rem;
+    border: .1rem solid var(--vermillion);
+    border-radius: .4rem;
     color: var(--vermillion);
     text-transform: uppercase;
   }
 
   &__content {
-    margin-top: 24px;
-    margin-bottom: 10px;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
   }
 
   &__button-wrapper {
-    width: 210px;
+    width: fit-content;
     margin: 0 auto;
     position: relative;
   }

@@ -1,6 +1,6 @@
 .articles {
   &__hero {
-    padding-bottom: 117px;
+    padding-bottom: 11.7rem;
 
     & .hero__main,
     & .hero__subtitle {
@@ -9,10 +9,18 @@
   }
 
   &__browse {
-    padding-top: 178px;
+    padding-top: 17.8rem;
 
-    & .section__header {
-      margin-bottom: 80px;
+    @include tablet {
+      padding-top: 14.8rem;
+    }
+
+    @include small-tablet {
+      padding-top: 12.8rem;
+    }
+
+    @include mobile {
+      padding-top: 10.8rem;
     }
 
     & .articles__list {
@@ -21,28 +29,45 @@
   }
 
   &__list {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
     position: relative;
+
+    @include mobile {
+      margin-bottom: 7rem;
+    }
   }
 
   &__item {
-    width: calc((100% - 20px) / 2);
-    padding: 16px;
-    border: 2px solid #000;
-    border-radius: 8px;
+    width: calc((100% - 2rem) / 2);
+    padding: 1.6rem;
+    border: .2rem solid #000;
+    border-radius: .8rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
     transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+    position: relative;
+    background-color: #fff;
+
+    @include small-tablet {
+      width: 100%;
+    }
 
     @include hover {
-      transform: translate(-10px, -10px);
-      box-shadow: 10px 10px 0 0 #000;
+      transform: translate(-1rem, -1rem);
+      box-shadow: 1rem 1rem 0 0 #000;
     }
 
     &-header {
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
+      transform: scale(1.001);
       transition: transform .3s ease-in-out;
+
+      @include mobile {
+        margin-bottom: 3rem;
+      }
 
       @include hover {
         transform: scale(1.02);
@@ -50,9 +75,10 @@
     }
 
     &-main {
-      padding-bottom: 26px;
-      margin-bottom: 20px;
-      border-bottom: .5px solid var(--davys-grey);
+      flex-grow: 1;
+      margin-bottom: 2rem;
+      padding-bottom: 2.6rem;
+      border-bottom: .05rem solid var(--davys-grey);
     }
 
     &-footer {
@@ -65,20 +91,20 @@
   &__image {
     display: block;
     width: 100%;
-    border-radius: 8px;
+    border-radius: .8rem;
     aspect-ratio: 1.68;
     object-fit: cover;
     object-position: center;
   }
 
   &__category {
-    margin-bottom: 6px;
+    margin-bottom: .6rem;
     font-weight: 700;
   }
 
   &__link {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #000;
     transition: color .3s ease-in-out;
 

@@ -3,13 +3,9 @@
 :root {
   // base
   --font: 'Montserrat Alternates', sans-serif;;
-  --content-width: 1160px;
-  --container-offset: 140px;
+  --content-width: 116rem;
+  --container-offset: 14rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-  --big-content-width: 1440px;
-  --big-container-offset: 0px;
-  --big-container-width: calc(var(--big-content-width) + (var(--big-container-offset) * 2));
-
 
   // colors
   --white-color: #fff;
@@ -19,4 +15,15 @@
   --vermillion: #cd4631;
   --champagne: #f7ede8;
   --alice-blue: #edf3f7;
+
+  // media
+  @include for-desktop {
+    --content-width: 106rem;
+    --container-offset: 5rem;
+  }
+
+  @include small-tablet {
+    --content-width: 72.8rem;
+    --container-offset: 2rem;
+  }
 }

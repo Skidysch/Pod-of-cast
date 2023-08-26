@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -16,10 +17,18 @@ html {
 
 .page__body {
   margin: 0;
-  min-width: 320px;
+  min-width: 32rem;
   height: 100%;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.6;
+
+  @include tablet {
+    font-size: 1.4rem;
+  }
+
+  @include mobile {
+    font-size: 1.2rem;
+  }
 }
 
 .main {
@@ -43,37 +52,105 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-h1 {
-  font-size: 96px;
+h1,
+.h1 {
+  font-size: 9.6rem;
   line-height: 1;
-  letter-spacing: -3.84px;
+  letter-spacing: -.04em;
+
+  @include tablet {
+    font-size: 7.5rem;
+  }
+
+  @include small-tablet {
+    font-size: 6rem;
+  }
+
+  @include mobile {
+    font-size: 5rem;
+  }
 }
 
-h2 {
-  font-size: 59.3px;
+h2,
+.h2 {
+  font-size: 5.93rem;
   line-height: 1.2;
-  letter-spacing: -1.186px;
+  letter-spacing: -.02em;
+
+  @include tablet {
+    font-size: 4.6rem;
+  }
+
+  @include small-tablet {
+    font-size: 3.7rem;
+  }
+
+  @include mobile {
+    font-size: 3.08rem;
+  }
 }
 
-h3 {
-  font-size: 36.65px;
-  letter-spacing: -.733px;
+h3,
+.h3 {
+  font-size: 3.665rem;
+  letter-spacing: -.02em;
   line-height: 1;
+
+  @include tablet {
+    font-size: 2.86rem;
+  }
+
+  @include small-tablet {
+    font-size: 2.29rem;
+  }
+
+  @include mobile {
+    font-size: 1.9rem;
+  }
 }
 
-h4 {
-  font-size: 22.65px;
+h4,
+.h4 {
+  font-size: 2.265rem;
   line-height: 1.6;
+
+  @include tablet {
+    font-size: 1.77rem;
+  }
+
+  @include small-tablet {
+    font-size: 1.57rem;
+  }
+
+  @include mobile {
+    font-size: 1.38rem;
+  }
 }
 
 .caption-text {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: var(--davys-grey);
+
+  @include tablet {
+    font-size: 1.2rem;
+  }
+
+  @include mobile {
+    font-size: 1rem;
+  }
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: var(--davys-grey);
+
+  @include tablet {
+    font-size: 1rem;
+  }
+
+  @include mobile {
+    font-size: 0.8rem;
+  }
 }
 
 .site-container {
@@ -127,17 +204,34 @@ h4 {
 }
 
 section {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
   text-align: center;
   position: relative;
+
+  @include tablet {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  @include mobile {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 
 .section {
-
   &__header{
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
+
+    @include tablet {
+      margin-bottom: 8rem;
+    }
+
+    @include mobile {
+      margin-bottom: 6rem;
+    }
   }
 
   &__title {
@@ -146,21 +240,33 @@ section {
 
     &--small {
       line-height: 1.4;
-      margin-bottom: 80px;
+      margin-bottom: 7rem;
+
+      @include tablet {
+        margin-bottom: 5rem;
+      }
+
+      @include mobile {
+        margin-bottom: 3rem;
+      }
     }
   }
 
   &__subtitle {
-    margin-top: 20px;
+    margin-top: 2rem;
     color: var(--davys-grey);
     font-weight: 500;
+    position: relative;
+
+    @include small-tablet {
+      margin-top: 1rem;
+    }
   }
 
   &__cover {
     position: relative;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 2rem;
 
     &-image {
       display: block;
@@ -173,13 +279,6 @@ section {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
-
-  &--big {
-    margin: 0 auto;
-    padding: 0 var(--big-container-offset);
-    max-width: var(--big-container-width);
-    overflow: hidden;
-  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -219,5 +318,5 @@ section {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 20px;
+  column-gap: 2rem;
 }

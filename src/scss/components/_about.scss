@@ -1,19 +1,41 @@
 .about {
   &-podcast {
-    padding-top: 240px;
+    padding-top: 24rem;
+
+    @include tablet {
+      padding-top: 18rem;
+    }
 
     &__history {
       &__list {
-        margin-bottom: 81px;
-        gap: 20px;
+        margin-bottom: 8rem;
+        gap: 2rem;
         text-align: left;
+
+        @include tablet {
+          margin-bottom: 6rem;
+        }
+
+        @include mobile {
+          margin-bottom: 4rem;
+          gap: 1rem;
+        }
       }
 
       &__item {
-        width: calc((100% - 20px) / 2);
+        width: calc((100% - 2rem) / 2);
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 3rem;
+
+        @include tablet {
+          gap: 2rem;
+        }
+
+        @include mobile {
+          width: calc((100% - 1rem) / 2);
+          gap: 1rem;
+        }
       }
 
       &__link {
@@ -23,11 +45,11 @@
     }
 
     &__team {
-      padding-top: 100px;
-      border-top: .5px solid var(--davys-grey);
+      padding-top: 10rem;
+      border-top: .05rem solid var(--davys-grey);
 
       &-header {
-        margin-bottom: 80px;
+        margin-bottom: 8rem;
       }
     }
   }

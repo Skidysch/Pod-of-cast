@@ -3,43 +3,109 @@
 
   &__hero {
     &--1 {
-      width: 399.604px;
-      height: 437.627px;
-      top: 147.19px;
-      left: -207.36px;
+      width: 40rem;
+      aspect-ratio: .909;
+      top: 11.7rem;
+      left: -20.7rem;
       transform: rotate(-45deg);
       fill: transparent;
       stroke: #000;
-      stroke-width: 8px;
+      stroke-width: .8rem;
       stroke-linecap: round;
+
+      @include for-desktop {
+        width: 35rem;
+        top: 14.7rem;
+      }
+
+      @include tablet {
+        width: 32rem;
+        top: 9.7rem;
+      }
+
+      @include small-tablet {
+        width: 25rem;
+      }
+
+      @include mobile {
+        top: 8.7rem;
+      }
     }
     &--2 {
-      width: 64px;
-      height: 64px;
-      top: 350.61px;
-      left: 262px;
+      width: 6.4rem;
+      aspect-ratio: 1;
+      top: 33rem;
+      left: 26.2rem;
       fill: var(--vermillion);
+
+      @include for-desktop {
+        width: 5rem;
+        top: 33.5rem;
+        left: 21.2rem;
+      }
+
+      @include tablet {
+        width: 4.5rem;
+        top: 26.6rem;
+        left: 17.2rem;
+      }
+
+      @include small-tablet {
+        width: 4rem;
+        top: 23rem;
+        left: 9rem;
+      }
+
+      @include mobile {
+        top: 22rem;
+      }
     }
     &--3 {
-      width: 120px;
-      height: 167px;
-      top: 234px;
-      right: -28px;
+      width: 12rem;
+      aspect-ratio: .718;
+      top: 23.4rem;
+      right: -2.8rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        top: 31.4rem;
+        right: -3.8rem;
+      }
+
+      @include mobile {
+        width: 8rem;
+      }
     }
+
   }
 
   &--scribble {
-    width: 150px;
-    height: 150px;
-    top: -74px;
+    width: 15rem;
+    height: 15rem;
+    top: -7.4rem;
     left: 50%;
     transform: translateX(-50%);
     fill: transparent;
     stroke: #000;
-    stroke-width: 1.5px;
+    stroke-width: .15rem;
     stroke-linecap: round;
     appearance: visible;
     z-index: 1;
+
+    @include tablet {
+      width: 10rem;
+      height: 10rem;
+      top: -5rem;
+    }
+
+    @include mobile {
+      width: 8rem;
+      height: 8rem;
+      top: -4rem;
+    }
 
     &--vermillion {
       stroke: var(--vermillion);
@@ -48,237 +114,351 @@
 
   &__features {
     &--1 {
-      width: 120px;
-      height: 120px;
-      left: -60px;
-      bottom: 49px;
+      width: 12rem;
+      aspect-ratio: 1;
+      left: -6rem;
+      bottom: 4.9rem;
       fill: transparent;
       stroke: var(--vermillion);
-      stroke-width: 7.5px;
+      stroke-width: .75rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        width: 9rem;
+      }
+
+      @include mobile {
+        width: 7rem;
+        left: -4rem;
+        bottom: 6.9rem;
+      }
     }
     &--2 {
-      width: 200px;
-      height: 200px;
-      top: -78px;
-      right: -57px;
+      width: 20rem;
+      aspect-ratio: 1;
+      top: -7.8rem;
+      right: -5.7rem;
+
+      @include tablet {
+        width: 15rem;
+        top: -6.8rem;
+      }
+
+      @include small-tablet {
+        width: 12rem;
+        top: -5.8rem;
+      }
+
+      @include mobile {
+        width: 9rem;
+        top: -2.8em;
+      }
     }
   }
 
   &__testimonials {
     &--1 {
-      width: 105px;
-      height: 105px;
-      top: -69px;
-      left: -99px;
+      width: 10.5rem;
+      aspect-ratio: 1;
+      top: -6.9rem;
+      left: -9.9rem;
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 8.5rem;
+        top: -5.9rem;
+        left: -7.9rem;
+      }
+
+      @include small-tablet {
+        width: 6.5rem;
+        top: -4.9rem;
+        left: -5.9rem;
+      }
     }
   }
 
   &__membership {
     &--1 {
-      width: 240px;
-      height: 240px;
-      top: -146.07px;
-      right: -102.93px;
+      width: 24rem;
+      aspect-ratio: 1;
+      top: -14.6rem;
+      right: -10.3rem;
       transform: rotate(14.305deg);
+
+      @include tablet {
+        width: 20rem;
+        top: -12.6rem;
+      }
+
+      @include small-tablet {
+        width: 16rem;
+        top: -9.6rem;
+        right: -7.3rem;
+      }
     }
   }
 
   &__recent-episodes {
     &--1 {
-      width: 240px;
-      height: 240px;
-      top: -170px;
-      right: -140px;
+      width: 24rem;
+      aspect-ratio: 1;
+      top: -17rem;
+      right: -14rem;
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 20rem;
+        top: -14.16rem;
+        right: -11.66rem;
+      }
+
+      @include small-tablet {
+        width: 17rem;
+        top: -11.16rem;
+        right: -8.66rem;
+      }
+
+      @include mobile {
+        width: 15rem;
+        top: -9.16rem;
+        right: -7.66rem;
+      }
     }
   }
 
   &__sponsorship {
     &--1 {
-      width: 120px;
-      height: 120px;
-      top: -63px;
-      left: -74px;
+      width: 12rem;
+      aspect-ratio: 1;
+      top: -6.3rem;
+      left: -7.4rem;
       transform: scaleX(-1);
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 9rem;
+        top: -4.3rem;
+        left: -5.4rem;
+      }
+
+      @include small-tablet {
+        width: 7rem;
+        top: -3.3rem;
+        left: -4.4rem;
+      }
+
+      @include mobile {
+        width: 6rem;
+        top: -3rem;
+        left: -3.8rem;
+      }
     }
+
     &--2 {
-      width: 200px;
-      height: 200px;
-      top: -92px;
-      right: -87px;
+      width: 20rem;
+      height: 20rem;
+      top: -9.2rem;
+      right: -8.7rem;
       display: block;
+
+      @include tablet {
+        width: 15rem;
+        top: -9.5rem;
+      }
+
+      @include small-tablet {
+        width: 12rem;
+        right: -7rem;
+      }
+
+      @include mobile {
+        width: 9rem;
+        right: -5rem;
+      }
     }
+
     &--3 {
-      width: 120px;
-      height: 120px;
-      bottom: -40px;
-      left: -70px;
+      width: 12rem;
+      height: 12rem;
+      bottom: -4rem;
+      left: -7rem;
       fill: transparent;
       stroke: var(--pewter-blue);
-      stroke-width: 7.5px;
+      stroke-width: .75rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        width: 9rem;
+        bottom: -5rem;
+        left: -4rem;
+      }
+
+      @include mobile {
+        width: 7rem;
+        left: -3rem;
+        bottom: -5rem;
+      }
     }
   }
 
   &__news {
     &--1 {
-      width: 185px;
-      height: 184px;
-      top: -70px;
-      left: -87px;
+      width: 18.5rem;
+      aspect-ratio: 1;
+      top: -7rem;
+      left: -8.7rem;
       transform: rotate(21.967deg);
+
+      @include tablet {
+        width: 15rem;
+        top: -5.5rem;
+        left: -7rem;
+      }
+
+      @include mobile {
+        width: 12rem;
+        top: -4.5rem;
+        left: -5.5rem;
+      }
     }
 
     &--2 {
-      width: 240px;
-      height: 240px;
-      bottom: -155px;
-      right: -145px;
+      width: 24rem;
+      aspect-ratio: 1;
+      bottom: -15.5rem;
+      right: -14.5rem;
       transform: rotate(135deg);
+
+      @include tablet {
+        width: 20rem;
+        bottom: -12.5rem;
+        right: -11.5rem;
+      }
+
+      @include mobile {
+        width: 17rem;
+        bottom: -10.5rem;
+        right: -9.5rem;
+      }
     }
   }
 
   &__download {
     &--1 {
       display: block;
-      width: 449.99px;
-      height: 923.59px;
+      width: 45rem;
+      aspect-ratio: .49;
       transform: rotate(10deg);
-      top: 309.77px;
-      left: -80.42px;
+      top: 31rem;
+      left: -8rem;
+
+      @include tablet {
+        width: 35rem;
+      }
+
+      @include small-tablet {
+        left: -16rem;
+        top: 29rem;
+      }
+
+      @include mobile {
+        left: -25rem;
+        top: 14rem;
+      }
     }
 
     &--2 {
-      width: 522.01px;
-      height: 807.67px;
-      top: 114.51;
-      right: -102.17px;
+      width: 52.2rem;
+      aspect-ratio: .6;
+      top: 27.5rem;
+      right: -15.2rem;
       transform: rotate(-15deg);
+
+      @include tablet {
+        width: 45.2rem;
+        top: 20.5rem;
+        right: -20.2rem;
+      }
+
+      @include small-tablet {
+        right: -27.2rem;
+      }
     }
 
     &--3 {
-      width: 120px;
-      height: 120px;
-      top: -70px;
-      right: -70px;
+      width: 12rem;
+      aspect-ratio: 1;
+      top: -7rem;
+      right: -7rem;
       fill: var(--vermillion);
+
+      @include tablet {
+        width: 10rem;
+        top: -6rem;
+        right: -6rem;
+      }
     }
   }
 
   &__episode {
     &-1 {
       &--mask {
-        &--full {
-          max-width: 158.27px;
-          height: 170.22px;
-          top: 100px;
-          left: 104.88px;
-        }
-
-        &--mini {
-          max-width: 70.436px;
-          height: 75.755px;
-          top: 44.5px;
-          left: 46.68px;
-        }
-
-        &--big {
-          max-width: 200.277px;
-          height: 215.4px;
-          top: 126.54px;
-          left: 132.72px;
-        }
+        max-width: 42.43%;
+        height: 45.64%;
+        top: 26.81%;
+        left: 28.12%;
       }
     }
 
     &-2 {
       &--mask {
-        &--full {
-          max-width: 323.588px;
-          height: 150.739px;
-          top: 116px;
-          left: 21.2px;
-        }
-
-        &--mini {
-          max-width: 144.01px;
-          height: 67.085px;
-          top: 51.62px;
-          left: 9.43px;
-        }
+        max-width: 86.75%;
+        height: 40.41%;
+        top: 31.1%;
+        left: 5.68%;
       }
     }
 
     &-3 {
       &--mask {
-        &--full {
-          max-width: 177px;
-          height: 305.812px;
-          top: 47.4px;
-          left: 120px;
-        }
-
-        &--mini {
-          max-width: 90.352px;
-          height: 156.105px;
-          top: .19px;
-          left: 49.25px;
-        }
+        max-width: 47.45%;
+        height: 81.99%;
+        top: 12.71%;
+        left: 32.17%;
       }
     }
 
     &-4 {
       &--mask {
-        &--full {
-          max-width: 483.438px;
-          height: 381.552px;
-          top: -129px;
-          left: -129px;
-        }
-
-        &--mini {
-          max-width: 210.144px;
-          height: 169.806px;
-          top: -57.41px;
-          left: -57.41px;
-        }
+        max-width: 129.61%;
+        height: 102.29%;
+        top: -34.58%;
+        left: -34.58%;
       }
     }
 
     &-5 {
       &--mask {
-        &--full {
-          max-width: 283.457px;
-          height: 246.691px;
-          top: 56.33px;
-          left: 48.52px;
-        }
-
-        &--mini {
-          max-width: 126.15px;
-          height: 109.787px;
-          top: 25.07px;
-          left: 21.59px;
-        }
+        max-width: 75.99%;
+        height: 66.14%;
+        top: 15.1%;
+        left: 13.01%;
       }
     }
 
     &-6 {
       &--mask {
-        &--full {
-          max-width: 286.631px;
-          height: 245.328px;
-          top: 11.97px;
-          left: 26px;
-        }
-
-        &--mini {
-          max-width: 127.562px;
-          height: 109.181px;
-          top: 5.327px;
-          left: 11.571px;
-        }
+        max-width: 76.84%;
+        height: 65.77%;
+        top: 3.21%;
+        left: 6.97%;
       }
     }
   }
@@ -286,31 +466,56 @@
   &__about {
     &__hero {
       &--1 {
-        width: 120px;
-        height: 120px;
-        bottom: -60px;
+        width: 12rem;
+        aspect-ratio: 1;
+        bottom: -6rem;
         right: 0;
         fill: transparent;
         stroke: var(--vermillion);
-        stroke-width: 7.5px;
+        stroke-width: .75rem;
+
+        @include tablet {
+          width: 9rem;
+          bottom: -13rem;
+        }
+
+        @include mobile {
+          width: 6rem;
+          bottom: -10rem;
+        }
       }
     }
 
     &__podcast {
       &--mask {
-        width: 424.997px;
-        height: 332.398px;
-        top: 175px;
-        left: 127px;
+        width: 36.64%;
+        height: 51.94%;
+        top: 27.34%;
+        left: 10.95%;
       }
 
       &--1 {
-        width: 98.893px;
-        height: 98.893px;
-        top: -61.9px;
-        right: -48.99px;
+        width: 9.9rem;
+        aspect-ratio: 1;
+        top: -6.19rem;
+        right: -4.9rem;
         transform: rotate(30deg);
-        fill: var(--pewter-blue)
+        fill: var(--pewter-blue);
+
+        @include tablet {
+          width: 9rem;
+          top: -5.19rem;
+        }
+
+        @include small-tablet {
+          width: 8rem;
+          top: -4.19rem;
+          right: -4.2rem;
+        }
+
+        @include mobile {
+          width: 7rem;
+        }
       }
     }
   }
@@ -318,10 +523,18 @@
   &__hosts {
     &--1,
     &--2 {
-      width: 130px;
-      height: 130px;
-      top: 16px;
-      right: 16px;
+      width: 13rem;
+      aspect-ratio: 1;
+      top: 1.6rem;
+      right: 1.6rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include mobile {
+        width: 8rem;
+      }
     }
 
     &--1 {
@@ -331,75 +544,170 @@
 
   &__sponsors {
     &--1 {
-      width: 74px;
-      height: 74px;
-      top: -40px;
-      left: -72px;
-      fill: var(--vermillion)
+      width: 7.4rem;
+      aspect-ratio: 1;
+      top: -4rem;
+      left: -7.2rem;
+      fill: var(--vermillion);
+
+      @include tablet {
+        width: 7rem;
+      }
+
+      @include small-tablet {
+        width: 5rem;
+        top: -3rem;
+        left: -5.2rem;
+      }
     }
   }
 
   &__feedback {
     &--1 {
-      width: 120px;
-      height: 120px;
-      bottom: 262px;
-      left: 20px;
+      width: 12rem;
+      aspect-ratio: 1;
+      bottom: 26.2rem;
+      left: 2rem;
       fill: transparent;
       stroke: var(--vermillion);
-      stroke-width: 7.5px;
+      stroke-width: .75rem;
+
+      @include tablet {
+        width: 10rem;
+      }
+
+      @include small-tablet {
+        bottom: 15.2rem;
+        width: 8rem;
+      }
+
+      @include mobile {
+        bottom: 11.2rem;
+      }
     }
 
     &--2 {
-      width: 78px;
-      height: 78px;
-      top: 327px;
-      right: 140px;
+      width: 7.8rem;
+      aspect-ratio: 1;
+      top: 32.7rem;
+      right: 14rem;
+
+      @include for-desktop {
+        right: 5rem;
+      }
+
+      @include small-tablet {
+        width: 6rem;
+        top: 29.7rem;
+        right: 2rem;
+      }
+
+      @include mobile {
+        top: 31.7rem;
+      }
     }
 
     &--3 {
       display: block;
-      width: 78px;
-      height: 78px;
-      top: -50px;
-      right: -40px;
+      width: 7.8rem;
+      aspect-ratio: 1;
+      top: -5rem;
+      right: -4rem;
       transform: rotate(13.874deg);
       fill: var(--pewter-blue);
+
+      @include tablet {
+        width: 6.8rem;
+        top: -4rem;
+      }
+
+      @include small-tablet {
+        width: 5.8rem;
+        right: -3rem;
+      }
+
+      @include mobile {
+        width: 4.8rem;
+        top: -3rem;
+      }
     }
   }
 
   &__episode {
     &__hero {
       &--1 {
-        width: 120px;
-        height: 120px;
-        bottom: -60px;
+        width: 12rem;
+        aspect-ratio: 1;
+        bottom: -6rem;
         right: 0;
         fill: transparent;
         stroke: var(--vermillion);
-        stroke-width: 7.5px;
+        stroke-width: .75rem;
+
+        @include tablet {
+          width: 10rem;
+          bottom: -4rem;
+        }
+
+        @include small-tablet {
+          width: 8rem;
+        }
+
+        @include mobile {
+          width: 6rem;
+          bottom: -3rem;
+        }
       }
     }
 
     &__browse {
       &--1 {
-        width: 240px;
-        height: 240px;
-        bottom: -163.92px;
-        left: -132.08px;
+        width: 24rem;
+        aspect-ratio: 1;
+        bottom: -16.4rem;
+        left: -13.2rem;
         transform: rotate(-150deg);
+
+        @include tablet {
+          width: 20rem;
+          left: -9.2rem;
+        }
+
+        @include mobile {
+          width: 13rem;
+          left: -5.2rem;
+          bottom: -14.4rem;
+        }
       }
     }
   }
 
   &__article {
     &--1 {
-      width: 103.238px;
-      height: 103.238px;
-      top: -58.62px;
-      left: -84.62px;
+      width: 10.32rem;
+      aspect-ratio: 1;
+      top: -5.86rem;
+      left: -8.46rem;
       transform: rotate(-45deg);
       fill: var(--pewter-blue);
+
+      @include tablet {
+        width: 9rem;
+        top: -4.86rem;
+        left: -6.46rem;
+      }
+
+      @include small-tablet {
+        width: 8rem;
+        top: -4.36rem;
+        left: -5.46rem;
+      }
+
+      @include mobile {
+        width: 7rem;
+        top: -3.86rem;
+        left: -4.46rem;
+      }
     }
   }
 }
