@@ -3,7 +3,7 @@
 
 // Определение операционной системы на мобильных
 import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
+console.log(mobileCheck());
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -21,7 +21,7 @@ console.log(mobileCheck())
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-import { burger } from './functions/burger';
+import { burger } from "./functions/burger";
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
@@ -50,56 +50,6 @@ import { burger } from './functions/burger';
 // });
 
 // Подключение свайпера
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-Swiper.use([Navigation, Pagination]);
-
-const heroEpisodesSwiper = new Swiper('.hero__episodes__slider', {
-  watchSlidesProgress: true,
-  slidesPerView: 1,
-  spaceBetween: 15,
-  centeredSlides: true,
-  loop: true,
-  breakpoints: {
-    493: {
-      slidesPerView: 2,
-    },
-    901: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-const testimonialsSwiper = new Swiper('.testimonials__slider', {
-  watchSlidesProgress: true,
-  slidesPerView: 1,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    769: {
-      slidesPerView: 2,
-    },
-  },
-});
-
-const sponsorsSwiper = new Swiper('.sponsors__slider', {
-  watchSlidesProgress: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    769: {
-      slidesPerView: 2,
-    },
-  },
-});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

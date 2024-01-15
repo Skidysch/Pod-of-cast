@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
+  @include('partials/head.html')
 
-@include('partials/head.html')
-
-<body class="page__body">
-  <div class="site-container">
-    @include('partials/header.html')
-    <main class="main">
-      @include('partials/article-hero.html')
-      @include('partials/article-content.html')
-      @include('partials/article-related.html')
-    </main>
-    @include('partials/footer.html')
-  </div>
-</body>
-
+  <body class="page__body" data-barba="wrapper">
+    <div class="wrapper">
+      @include('partials/header.html')
+      <main
+        class="main wrapper__inner"
+        data-barba="container"
+        data-barba-namespace="article"
+      >
+        @include('partials/article-hero.html')
+        @include('partials/article-content.html')
+        @include('partials/article-related.html')
+        @include('partials/footer.html')
+      </main>
+    </div>
+  </body>
 </html>

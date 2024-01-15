@@ -32,6 +32,7 @@ html {
 }
 
 .main {
+  overflow: hidden;
   flex-grow: 1;
 }
 
@@ -153,8 +154,16 @@ h4,
   }
 }
 
+.wrapper {
+  position: relative;
+}
+
+.wrapper__inner {
+  position: absolute;
+  width: 100%;
+}
+
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
   display: flex;
   flex-direction: column;
   min-height: 100%;
